@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sateek Toolkit - Techsang App</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4343f4",
+                        "primary-dark": "#3232b7",
+                        "background-light": "#ffffff",
+                        "background-offset": "#f5f5f8",
+                        "background-dark": "#101022",
+                        "background-dark-offset": "#1a1a2e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15)',
+                        'card': '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased selection:bg-primary/30">
+    <div class="relative flex flex-col min-h-screen">
+        <!-- Top Navigation using component-->
+        <site-header active="apps"></site-header>
+
+        <main class="flex-grow flex flex-col items-center w-full">
+            <!-- Breadcrumbs -->
+            <div class="w-full max-w-5xl px-4 md:px-6 py-4">
+                <nav class="flex text-sm text-text-secondary dark:text-gray-400">
+                    <a class="hover:text-primary hover:underline" href="/">Home</a>
+                    <span class="mx-2">/</span>
+                    <a class="hover:text-primary hover:underline" href="/apps">Apps</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-text-main dark:text-white font-medium">Sateek Toolkit</span>
+                </nav>
+            </div>
+            <!-- Hero Section / App Header -->
+            <div class="w-full max-w-5xl px-4 md:px-6 py-8 md:py-12">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <!-- App Icon -->
+                    <div class="flex-shrink-0 mx-auto md:mx-0">
+                        <div
+                            class="w-32 h-32 md:w-40 md:h-40 rounded-2xl shadow-soft overflow-hidden bg-white relative group">
+                            <!-- Using a gradient abstract for app icon -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white"
+                                data-alt="Sateek Toolkit App Icon with abstract geometric shapes">
+                                <span class="material-symbols-outlined text-[64px]">handyman</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- App Info -->
+                    <div class="flex flex-col flex-grow text-center md:text-left gap-4">
+                        <div>
+                            <h1
+                                class="text-3xl md:text-4xl font-display font-semibold text-text-main dark:text-white tracking-tight mb-2">
+                                Sateek Toolkit
+                            </h1>
+                            <p class="text-lg text-primary font-medium">Techsang Devs</p>
+                            <div
+                                class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-text-secondary dark:text-gray-400">
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span>4.8 • 12K Reviews</span>
+                                </div>
+                                <span>•</span>
+                                <div>1M+ Downloads</div>
+                                <span>•</span>
+                                <div class="flex items-center gap-1">
+                                    <span class="bg-gray-200 dark:bg-gray-700 text-[10px] px-1 rounded">E</span>
+                                    <span>Everyone</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-300 max-w-2xl text-base leading-relaxed">
+                            The ultimate utility app for Android. Clean, fast, and secure tools to optimize your daily
+                            workflow and boost productivity.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-2 justify-center md:justify-start">
+                            <button
+                                class="flex items-center justify-center gap-2 bg-primary hover:bg-blue-600 text-white h-11 px-8 rounded-lg font-medium transition-all shadow-md active:scale-95 w-full sm:w-auto">
+                                <span class="material-symbols-outlined fill">install_mobile</span>
+                                <span>Install on Google Play</span>
+                            </button>
+                            <button
+                                class="flex items-center justify-center gap-2 border border-[#dadce0] dark:border-gray-700 hover:bg-background-alt dark:hover:bg-gray-800 text-primary h-11 px-6 rounded-lg font-medium transition-colors w-full sm:w-auto">
+                                <span class="material-symbols-outlined">share</span>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Horizontal Divider -->
+            <div class="w-full max-w-5xl border-t border-[#dadce0] dark:border-gray-800 my-4"></div>
+            <!-- Screenshots Section -->
+            <section class="w-full max-w-5xl px-4 md:px-6 py-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold text-text-main dark:text-white">Screenshots</h2>
+                    <div class="flex gap-2">
+                        <button class="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-text-secondary">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button class="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-text-secondary">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Scroll Container -->
+                <div class="flex overflow-x-auto gap-4 pb-8 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide snap-x">
+                    <!-- Screenshot 1 -->
+                    <div
+                        class="snap-center shrink-0 w-[240px] md:w-[280px] aspect-[9/16] rounded-xl overflow-hidden shadow-soft border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 group">
+                        <div class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                            data-alt="App dashboard screenshot showing analytics charts and graphs"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYaiOcq_sD_deCMnMySfxuc__sU5kiKrqrVIWsI2p2OO5QfoVFEH-9MCMkZBQNGZuLRoEuj5dEV4RW1BN-7lVrgnNmB7C6HTTK-cq9fK_y9IPP1vsWKmMV6qdyDNiHciM3J-Cla-GVW2b0h0Nz_ak8rxYMnfjxTGMCg6yOyP_zW1VHOltOKlLFWgvoZPhEpbdV0aVWrXWdkCLnklqpleC5cXvCQ2Vr5GLN8lXfRVPtn4BbZjjKlnU2quVH7XYn5B9dQUU2TaE0-Psy');">
+                        </div>
+                    </div>
+                    <!-- Screenshot 2 -->
+                    <div
+                        class="snap-center shrink-0 w-[240px] md:w-[280px] aspect-[9/16] rounded-xl overflow-hidden shadow-soft border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 group">
+                        <div class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                            data-alt="App settings screen screenshot showing toggle switches and preferences"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnDCGRnQVAUq2GGqXPYxcGc55qnlnjxY1sb6ihZEr5igx3Qu1BaBtK7b8jQu6ovtVzLdkhzm41-5FqjRvSfgS71uqWh-Q8WT3plomvNuvfw-McdlxLousgqu8Krytjuc6t6ykuRhqeMq4UfBnSzrbNBlfduSo5ly_TbrkajeOU-GZP6z2enFgwCEYFfvf1vxYD-gp3yo0_3SzTXI4nrJSrmdCd8Vm7dKmac5ne4HnsmWK89j2M-xJiTHKknOwKs4RmD81itY9wOYXn');">
+                        </div>
+                    </div>
+                    <!-- Screenshot 3 -->
+                    <div
+                        class="snap-center shrink-0 w-[240px] md:w-[280px] aspect-[9/16] rounded-xl overflow-hidden shadow-soft border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 group">
+                        <div class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                            data-alt="App feature usage screenshot displaying a list of tools"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCafJuxrqpLS_PiA9NVbvEJnYpJ2ZSARvs6qkBhrcMmWu8_Bv0i85DSmNMnaeWl3pu2dd5Ti_BWlunWm-FUkzLs3rqMoCjojpudHWG76iB5Moke6cD7UCd-8HCAVn2NIhXdOcMhNcv-oWmbAtTZpxLUJ08jj8lujDEhIAoTCan7glblZGpI5adoRnJRIo4IYAUy4kAaL1wxnKqeMvsfULfYIYPaGkQXma6OlDhZat0XVW1pPSpWbZMCtI7gE1TLDXHbBjc95SHx_Ai_');">
+                        </div>
+                    </div>
+                    <!-- Screenshot 4 -->
+                    <div
+                        class="snap-center shrink-0 w-[240px] md:w-[280px] aspect-[9/16] rounded-xl overflow-hidden shadow-soft border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 group">
+                        <div class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Dark mode version of the app dashboard"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCydV0IKMbHeTpVcYxCOSETgyrsvh4ww7k46xK-f2jcy_LHtWMD5q4prZoOv_XHOYvhNsMdvcaHA1JXTnPaIUCgNfu5ljgQsAdP5iWnFX-adT0Jf_phXsjHkvqB8KMwCOn4maCz-LC5EGNuNG0xd8qCgQBb3tGlQGUcFznLwWlvZGuKoo09oJe-mbfFBNS-i63R_8uUktAD2tGRpQHmRXcvnjtQWj_C941GlqrkMRc1rw6M9AIhicm7Krqw_3E3d6mbsby44uZ5OE_q');">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section & Features Grid -->
+            <section
+                class="w-full bg-background-alt dark:bg-gray-900/50 py-12 border-t border-[#dadce0] dark:border-gray-800">
+                <div class="max-w-5xl mx-auto px-4 md:px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <!-- About Text -->
+                        <div class="lg:col-span-2 space-y-6">
+                            <h2 class="text-xl font-semibold text-text-main dark:text-white flex items-center gap-2">
+                                About this app
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </h2>
+                            <div class="prose prose-blue prose-lg text-text-secondary dark:text-gray-300">
+                                <p>
+                                    Experience the power of efficiency with Sateek Toolkit. Whether you are a power user
+                                    or just looking to simplify your digital life, our app provides a comprehensive
+                                    suite of utilities designed to make your Android experience smoother.
+                                </p>
+                                <p>
+                                    From system cleaning to network analysis, Sateek Toolkit handles it all with a
+                                    minimal footprint and maximum performance. We prioritize your privacy and ensure
+                                    that no personal data leaves your device without your explicit consent.
+                                </p>
+                                <p class="font-medium text-text-main dark:text-white mt-4">Key Benefits:</p>
+                                <ul class="list-none pl-0 space-y-3 mt-2">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                                        <span>Instant cache cleaning and memory optimization.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                                        <span>Detailed battery usage analytics to prolong life.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                                        <span>Secure app locker to protect your sensitive data.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                                        <span>Ad-free experience for premium users.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Badges -->
+                            <div class="flex flex-wrap gap-3 pt-4">
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-xs font-medium text-text-secondary dark:text-gray-300">
+                                    <span class="material-symbols-outlined text-[16px]">verified_user</span>
+                                    Verified
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-xs font-medium text-text-secondary dark:text-gray-300">
+                                    <span class="material-symbols-outlined text-[16px]">bolt</span>
+                                    Fast
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-xs font-medium text-text-secondary dark:text-gray-300">
+                                    <span class="material-symbols-outlined text-[16px]">security</span>
+                                    Secure
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Sidebar Info -->
+                        <div class="space-y-6">
+                            <h2 class="text-xl font-semibold text-text-main dark:text-white">App Info</h2>
+                            <div
+                                class="bg-white dark:bg-background-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm space-y-5">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">update</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Updated
+                                            on</span>
+                                        <span class="text-sm font-medium text-text-main dark:text-white">Oct 24,
+                                            2023</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">sd_storage</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Download
+                                            Size</span>
+                                        <span class="text-sm font-medium text-text-main dark:text-white">24 MB</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">smartphone</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Version</span>
+                                        <span class="text-sm font-medium text-text-main dark:text-white">2.4.1</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">android</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Requires
+                                            Android</span>
+                                        <span class="text-sm font-medium text-text-main dark:text-white">8.0 and
+                                            up</span>
+                                    </div>
+                                </div>
+                                <div class="border-t border-gray-100 dark:border-gray-800 pt-4 mt-2">
+                                    <div class="flex flex-col gap-2">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Developer
+                                            Contact</span>
+                                        <a class="flex items-center gap-2 text-sm text-primary hover:underline"
+                                            href="#">
+                                            <span class="material-symbols-outlined text-[18px]">language</span>
+                                            Website
+                                        </a>
+                                        <a class="flex items-center gap-2 text-sm text-primary hover:underline"
+                                            href="#">
+                                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                                            support@techsang.com
+                                        </a>
+                                        <a class="flex items-center gap-2 text-sm text-primary hover:underline"
+                                            href="#">
+                                            <span class="material-symbols-outlined text-[18px]">privacy_tip</span>
+                                            Privacy Policy
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- More Apps Section -->
+            <section class="w-full max-w-5xl px-4 md:px-6 py-12">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold text-text-main dark:text-white">More by Techsang</h2>
+                    <a class="text-primary text-sm font-medium hover:underline" href="#">See all</a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- App Card 1 -->
+                    <a class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-alt dark:hover:bg-gray-800 transition-colors group"
+                        href="#">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center shrink-0 shadow-sm">
+                            <span class="material-symbols-outlined text-orange-500 text-3xl">bolt</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3
+                                class="font-medium text-text-main dark:text-white group-hover:text-primary transition-colors">
+                                Speed Booster</h3>
+                            <p class="text-sm text-text-secondary dark:text-gray-400 line-clamp-2 mt-1">Optimize your
+                                phone performance with one tap.</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="material-symbols-outlined text-xs text-text-secondary">star</span>
+                                <span class="text-xs text-text-secondary">4.5</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- App Card 2 -->
+                    <a class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-alt dark:hover:bg-gray-800 transition-colors group"
+                        href="#">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0 shadow-sm">
+                            <span class="material-symbols-outlined text-green-500 text-3xl">shield</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3
+                                class="font-medium text-text-main dark:text-white group-hover:text-primary transition-colors">
+                                SafeGuard VPN</h3>
+                            <p class="text-sm text-text-secondary dark:text-gray-400 line-clamp-2 mt-1">Browse the web
+                                anonymously and securely.</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="material-symbols-outlined text-xs text-text-secondary">star</span>
+                                <span class="text-xs text-text-secondary">4.9</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- App Card 3 -->
+                    <a class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-alt dark:hover:bg-gray-800 transition-colors group"
+                        href="#">
+                        <div
+                            class="w-16 h-16 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center shrink-0 shadow-sm">
+                            <span class="material-symbols-outlined text-purple-500 text-3xl">folder_zip</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3
+                                class="font-medium text-text-main dark:text-white group-hover:text-primary transition-colors">
+                                File Commander</h3>
+                            <p class="text-sm text-text-secondary dark:text-gray-400 line-clamp-2 mt-1">Manage files
+                                efficiently with advanced tools.</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="material-symbols-outlined text-xs text-text-secondary">star</span>
+                                <span class="text-xs text-text-secondary">4.2</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <site-footer></site-footer>
+
+        <script src="/components/header.js"></script>
+        <script src="/components/footer.js"></script>
+    </div>
+</body>
+
+</html>
