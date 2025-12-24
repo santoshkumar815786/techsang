@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>404 - Page Not Found | Techsang</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4387f4",
+                        "primary-hover": "#3367d6", // Slightly darker blue for hover states
+                        "background-light": "#f8f9fa", // Google-like light gray
+                        "background-dark": "#101722",
+                        "text-main": "#202124", // Google-like dark text
+                        "text-secondary": "#5f6368", // Google-like secondary text
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main dark:text-white font-display antialiased flex flex-col min-h-screen transition-colors duration-200">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#dadce0] dark:border-gray-800">
+        <div class="px-4 md:px-10 lg:px-40 flex items-center justify-between h-16 max-w-[1440px] mx-auto">
+            <!-- Logo Section -->
+            <div
+                class="flex items-center gap-3 text-text-main dark:text-white cursor-pointer hover:opacity-90 transition-opacity">
+                <div class="size-8 text-primary">
+                    <span class="material-symbols-outlined text-3xl">terminal</span>
+                </div>
+                <h2 class="text-xl font-bold tracking-tight">Techsang</h2>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                    href="#">Home</a>
+                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                    href="#">Services</a>
+                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                    href="#">Apps</a>
+                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                    href="#">Contact</a>
+            </nav>
+            <!-- CTA Button -->
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden sm:flex items-center justify-center h-10 px-6 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors shadow-sm">
+                    <span class="truncate">Contact Support</span>
+                </button>
+                <!-- Mobile Menu Icon -->
+                <button class="md:hidden text-text-main dark:text-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content: 404 Hero Section -->
+    <main class="flex-grow flex items-center justify-center py-10 px-4 md:px-10 lg:px-40">
+        <div class="w-full max-w-[960px] mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+                <!-- Illustration Side -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div
+                        class="relative w-full aspect-square max-w-[400px] bg-background-light dark:bg-gray-800/50 rounded-full flex items-center justify-center overflow-hidden">
+                        <!-- Abstract shapes as illustration placeholder -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-full opacity-50">
+                        </div>
+                        <div class="z-10 bg-contain bg-center bg-no-repeat w-3/4 h-3/4"
+                            data-alt="Abstract 3D shapes floating in blue space representing lost connection"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgltSo-fSv_rx59H2vMdT_Tm32ZrJKzZm3vpKqHGPwooBjYj7-tjuq0BAD1DUr8yZrDte9AYrijdnwyx0BmA4nC3DU_zvn6zC0FXRZmMM696CkYvzqzJq8XWvcx97DZPVx3yVKDgGjQdnkg_7kwHyD9FwwFsBD_9L5kHsySLypt-t_hS5OvQIgiSznDi9lZwKUf2-uR3Bny5t3T59aQa2xfspCQ5jqmxnvZPkUU8a9FwI2nItSjuXmlDIGOFo23AMiOWMw2Nrr5MAP'); opacity: 0.9; border-radius: 50%;">
+                        </div>
+                        <!-- Overlay Icon -->
+                        <div
+                            class="absolute bg-white dark:bg-gray-800 p-4 rounded-full shadow-lg bottom-[15%] right-[15%] animate-bounce">
+                            <span class="material-symbols-outlined text-4xl text-primary">search_off</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Content Side -->
+                <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+                    <div class="space-y-2">
+                        <span class="text-primary font-bold text-lg tracking-wide uppercase">Error 404</span>
+                        <h1
+                            class="text-4xl md:text-5xl lg:text-6xl font-black text-text-main dark:text-white tracking-tight leading-[1.1]">
+                            Page not found
+                        </h1>
+                        <p
+                            class="text-text-secondary dark:text-gray-400 text-lg max-w-md mx-auto md:mx-0 leading-relaxed pt-2">
+                            Sorry, the link you followed may be broken, or the page may have been removed. Let's get you
+                            back on track.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 w-full pt-4">
+                        <a class="group flex items-center justify-center h-12 px-8 rounded-full bg-primary hover:bg-primary-hover text-white text-base font-medium transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
+                            href="#">
+                            <span
+                                class="material-symbols-outlined mr-2 text-[20px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Go to Home
+                        </a>
+                        <a class="flex items-center justify-center h-12 px-8 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-primary dark:text-blue-400 text-base font-medium transition-colors w-full sm:w-auto"
+                            href="#">
+                            View Services
+                        </a>
+                    </div>
+                    <!-- Quick Links for SEO/UX -->
+                    <div class="pt-6 border-t border-gray-100 dark:border-gray-800 w-full mt-2">
+                        <p class="text-sm text-text-secondary dark:text-gray-500 mb-3 font-medium">Common destinations:
+                        </p>
+                        <div
+                            class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm text-primary dark:text-blue-400 font-medium">
+                            <a class="hover:underline" href="#">Android Development</a>
+                            <a class="hover:underline" href="#">Web Solutions</a>
+                            <a class="hover:underline" href="#">Backend API</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-background-dark border-t border-[#dadce0] dark:border-gray-800">
+        <div class="px-4 md:px-10 lg:px-40 py-12 max-w-[1440px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Links -->
+                <div class="flex gap-8 text-sm text-text-secondary dark:text-gray-400">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center md:text-right">
+                    <p class="text-sm text-text-secondary dark:text-gray-500">
+                        © 2024 Techsang. All rights reserved.
+                    </p>
+                </div>
+                <!-- Social Icons -->
+                <div class="flex items-center gap-4">
+                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">
+                        <!-- Twitter/X (Material Symbol substitute) -->
+                        <span class="material-symbols-outlined text-[20px]">alternate_email</span>
+                    </a>
+                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">
+                        <!-- LinkedIn (Material Symbol substitute: business_center or generic link) -->
+                        <span class="material-symbols-outlined text-[20px]">business_center</span>
+                    </a>
+                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">
+                        <!-- GitHub (Material Symbol substitute: code) -->
+                        <span class="material-symbols-outlined text-[20px]">code</span>
+                    </a>
+                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">
+                        <!-- Instagram (Material Symbol substitute: photo_camera) -->
+                        <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
