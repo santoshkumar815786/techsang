@@ -9,7 +9,7 @@
         {
             "id": "sateek-toolkit",
             "name": "Sateek Toolkit",
-            "tagline": "The ultimate utility app for Android.",
+            "tagline": "Sateek Toolkit is a powerful all-in-one utility app designed to simplify your daily tasks. From finance calculators to essential tools like QR/barcode generation, age calculation, and stock market utilities, everything you need is packed into one clean, easy-to-use app.",
             "icon": {
                 "type": "material",
                 "value": "handyman"
