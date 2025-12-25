@@ -22,8 +22,10 @@ class SiteHeader extends HTMLElement {
                             href="/services.html">Services</a>
                         <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'apps' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
                             href="/apps.html">Apps</a>
-                       <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'about_us' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
-                            href="/about-us.html">About us</a>
+                        <!--
+                            <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'about_us' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
+                                href="/about-us.html">About us</a>
+                        -->
                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'contact_us' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
                             href="/contact.html">Contact us</a>
                     </nav>
