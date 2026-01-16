@@ -134,12 +134,22 @@
             <strong>not collect personally identifiable information</strong> such as name,
             phone number, or email address.
         </p>
-        <p>The app may store the following data locally on your device:</p>
+
+        <h3>1. Data You Provide (Stored Locally)</h3>
+        <p>The app stores the following data locally on your device only:</p>
         <ul>
             <li>Saving goals, target amounts, target dates, and progress</li>
             <li>Income and expense records entered by the user</li>
             <li>Goal images selected by the user (from device storage)</li>
             <li>App preferences such as currency, reminders, and settings</li>
+        </ul>
+
+        <h3>2. Automatically Collected Information (Diagnostics)</h3>
+        <p>To improve app stability and performance, we collect non-personal technical data through <strong>Google Firebase</strong>:</p>
+        <ul>
+            <li><strong>Device Information:</strong> Model, OS version, and unique device identifiers.</li>
+            <li><strong>Crash Logs:</strong> Information about app crashes (via Firebase Crashlytics) to help us fix bugs.</li>
+            <li><strong>Usage Statistics:</strong> Anonymous data on how features are used (via Google Analytics for Firebase).</li>
         </ul>
     </section>
 
@@ -158,17 +168,9 @@
     <section class="card">
         <h2>🔐 Data Storage & Security</h2>
         <p>
-            All user data is stored <strong>locally on the device</strong>.
-            Bachat Box operates completely offline and does not sync data to any cloud server.
+            All financial data and personal records are stored <strong>locally on the device</strong>.
+            Bachat Box operates primarily offline and does not sync your personal financial data to any cloud server.
         </p>
-
-        <!-- ADDED -->
-        <p>
-            All locally stored data, including preferences and financial records, is
-            <strong>fully encrypted using secure on-device encryption mechanisms</strong>
-            to protect against unauthorized access.
-        </p>
-
         <p>
             Users can create manual backups using a proprietary
             <strong>.bachat file format</strong>.
@@ -181,37 +183,6 @@
         </ul>
         <p>
             The developer does not have access to backup data or encryption keys.
-        </p>
-    </section>
-
-    <!-- ADDED -->
-    <section class="card">
-        <h2>📊 Analytics & Crash Reporting</h2>
-        <p>
-            Bachat Box uses <strong>Firebase Analytics</strong> and
-            <strong>Firebase Crashlytics</strong> to improve app stability,
-            performance, and user experience.
-        </p>
-        <p>
-            These services collect <strong>anonymous and non-personal information</strong>
-            such as app usage events, device type, OS version, and crash logs.
-        </p>
-        <p>
-            No personal, financial, or user-entered data is logged or transmitted.
-            All data is handled according to Google Firebase privacy standards.
-        </p>
-    </section>
-
-    <!-- ADDED -->
-    <section class="card">
-        <h2>⬆️ App Version Updates</h2>
-        <p>
-            Bachat Box may periodically check for new versions available on the
-            <strong>Google Play Store</strong>.
-        </p>
-        <p>
-            Update notifications are shown only to inform users about important improvements,
-            security updates, or critical fixes. No user data is collected during this process.
         </p>
     </section>
 
@@ -244,28 +215,27 @@
             Bachat Box requests only the permissions necessary for core functionality:
         </p>
         <ul>
-            <li><strong>Storage / Media Access:</strong> To select goal images and create local encrypted backups</li>
-            <li><strong>Notifications:</strong> To send saving reminders (optional and user-controlled)</li>
-            <li><strong>Internet:</strong> Required for displaying ads, analytics, crash reporting, and in-app purchases</li>
+            <li><strong>Internet Access:</strong> Required for displaying ads, processing in-app purchases, and sending anonymous crash reports.</li>
+            <li><strong>Storage / Media Access:</strong> To select goal images and create/restore local encrypted backups (applies to Android 9 and below).</li>
+            <li><strong>Notifications:</strong> To send saving reminders and alerts.</li>
+            <li><strong>Alarms & Reminders:</strong> To schedule exact notifications for your saving goals.</li>
+            <li><strong>Run at Startup (Boot Completed):</strong> To ensure your scheduled reminders remain active after you restart your device.</li>
         </ul>
-        <p>
-            No unnecessary or background data access is performed.
-        </p>
     </section>
 
     <section class="card">
         <h2>🤝 Third-Party Services</h2>
         <p>
-            Bachat Box uses the following third-party services:
+            Bachat Box uses the following third-party services to provide and improve the service:
         </p>
         <ul>
-            <li>Google AdMob (Advertisements)</li>
-            <li>Google Play Services (In-App Purchases)</li>
-            <li>Firebase Analytics (Anonymous usage insights)</li>
-            <li>Firebase Crashlytics (Crash reporting)</li>
+            <li><strong>Google AdMob:</strong> For providing advertisements.</li>
+            <li><strong>Google Play Services:</strong> For In-App purchases and core functionality.</li>
+            <li><strong>Firebase Crashlytics:</strong> To monitor app stability and fix technical issues.</li>
+            <li><strong>Google Analytics for Firebase:</strong> To understand anonymous usage patterns and improve user experience.</li>
         </ul>
         <p>
-            These services operate under their respective privacy policies.
+            These services operate under their respective privacy policies. We encourage you to review Google's Privacy & Terms.
         </p>
     </section>
 
