@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Techsang - Digital Product Development</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4343f4",
+                        "primary-dark": "#3232b7",
+                        "background-light": "#ffffff",
+                        "background-offset": "#f5f5f8",
+                        "background-dark": "#101022",
+                        "background-dark-offset": "#1a1a2e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15)',
+                        'card': '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'24;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#3c4043] dark:text-gray-300 font-display antialiased overflow-x-hidden flex flex-col min-h-screen">
+    <!-- Main Layout Grid -->
+    <div class="flex-1 max-w-[1280px] w-full mx-auto px-4 md:px-10 py-8 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-12 relative">
+            <!-- Sticky Sidebar Navigation (Desktop) -->
+            <aside class="hidden lg:block h-fit sticky top-24">
+                <nav class="flex flex-col space-y-1">
+                    <p class="px-4 pb-2 text-xs font-bold text-[#5f6368] dark:text-gray-500 uppercase tracking-wider">
+                        Contents</p>
+                    <a class="group flex items-center gap-3 px-4 py-2 text-sm font-medium text-[#5f6368] dark:text-gray-400 hover:text-[#202124] dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-r-full border-l-[3px] border-transparent transition-all"
+                        href="#intro">
+                        Introduction
+                    </a>
+                    <a class="group flex items-center gap-3 px-4 py-2 text-sm font-medium text-[#5f6368] dark:text-gray-400 hover:text-[#202124] dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-r-full border-l-[3px] border-transparent transition-all"
+                        href="#collection">
+                        Data Collection
+                    </a>
+                    <a class="group flex items-center gap-3 px-4 py-2 text-sm font-medium text-[#5f6368] dark:text-gray-400 hover:text-[#202124] dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-r-full border-l-[3px] border-transparent transition-all"
+                        href="#usage">
+                        How We Use Data
+                    </a>
+                    <a class="group flex items-center gap-3 px-4 py-2 text-sm font-medium text-[#5f6368] dark:text-gray-400 hover:text-[#202124] dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-r-full border-l-[3px] border-transparent transition-all"
+                        href="#security">
+                        Security
+                    </a>
+                    <a class="group flex items-center gap-3 px-4 py-2 text-sm font-medium text-[#5f6368] dark:text-gray-400 hover:text-[#202124] dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-r-full border-l-[3px] border-transparent transition-all"
+                        href="#faq">
+                        Your Rights &amp; FAQ
+                    </a>
+                    <a class="group flex items-center gap-3 px-4 py-2 text-sm font-medium text-[#5f6368] dark:text-gray-400 hover:text-[#202124] dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-r-full border-l-[3px] border-transparent transition-all"
+                        href="#contact">
+                        Contact Us
+                    </a>
+                </nav>
+            </aside>
+            <!-- Main Content Area -->
+            <main class="flex flex-col gap-10 max-w-[800px]">
+                <!-- Page Heading -->
+                <section class="flex flex-col gap-4 border-b border-[#f0f2f5] dark:border-gray-800 pb-8" id="intro">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="material-symbols-outlined text-primary text-4xl">policy</span>
+                    </div>
+                    <h1
+                        class="text-[#202124] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                        Privacy Policy
+                    </h1>
+                    <div class="flex items-center gap-3 text-sm">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Effective</span>
+                        <p class="text-[#5f6368] dark:text-gray-400 font-medium">Last Updated: January 01, 2026</p>
+                    </div>
+                    <p class="text-[#3c4043] dark:text-gray-300 text-lg leading-relaxed mt-4">
+                        At Techsang, we believe trust is the foundation of our user relationship. This policy outlines
+                        our commitment to protecting your personal information while delivering seamless Android, web,
+                        and backend experiences. We prioritize transparency and user control, ensuring our practices
+                        align with global standards and Google Play policies.
+                    </p>
+                </section>
+                <!-- Commitment Section -->
+                <section
+                    class="bg-surface-light dark:bg-surface-dark rounded-xl p-8 border border-[#e5e7eb] dark:border-gray-700">
+                    <h2 class="text-[#202124] dark:text-white text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">verified_user</span>
+                        Our Core Commitment
+                    </h2>
+                    <p class="text-[#3c4043] dark:text-gray-300 leading-relaxed mb-6">
+                        We respect your privacy and are committed to protecting it through our compliance with this
+                        policy. We do not sell your personal data to third parties. Our business model is based on
+                        providing high-quality development services, not on monetizing user data.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-bold text-[#202124] dark:text-white text-sm">Transparent Collection</h3>
+                                <p class="text-sm text-[#5f6368] dark:text-gray-400">We only collect what is necessary.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-bold text-[#202124] dark:text-white text-sm">Secure Storage</h3>
+                                <p class="text-sm text-[#5f6368] dark:text-gray-400">Industry-standard encryption used.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-bold text-[#202124] dark:text-white text-sm">No Third-Party Sales</h3>
+                                <p class="text-sm text-[#5f6368] dark:text-gray-400">Your data is not for sale.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                            <div>
+                                <h3 class="font-bold text-[#202124] dark:text-white text-sm">User Control</h3>
+                                <p class="text-sm text-[#5f6368] dark:text-gray-400">You can request data deletion
+                                    anytime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Data Collection -->
+                <section class="space-y-6 pt-6" id="collection">
+                    <h2 class="text-[#202124] dark:text-white text-2xl font-bold tracking-tight">Information We Collect
+                    </h2>
+                    <p class="text-[#3c4043] dark:text-gray-300 leading-relaxed">
+                        To provide you with the best possible experience on our mobile apps and website, we collect
+                        minimal data types. This data is strictly used for functionality, analytics, and service
+                        improvement.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div
+                            class="p-6 border border-[#e5e7eb] dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800/50">
+                            <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-primary">person</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#202124] dark:text-white mb-2">Information You Provide
+                            </h3>
+                            <p class="text-sm text-[#5f6368] dark:text-gray-400 leading-relaxed">
+                                Information you voluntarily provide when you contact us, sign up for a newsletter, or
+                                request a quote. This typically includes your Name and Email Address.
+                            </p>
+                        </div>
+                        <div
+                            class="p-6 border border-[#e5e7eb] dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800/50">
+                            <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-primary">smartphone</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#202124] dark:text-white mb-2">Automatic Information</h3>
+                            <p class="text-sm text-[#5f6368] dark:text-gray-400 leading-relaxed">
+                                When you use our apps, we may automatically collect device information (model, OS
+                                version), IP address, and crash logs to help us identify and fix bugs.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Data Usage -->
+                <section class="space-y-6 pt-6" id="usage">
+                    <h2 class="text-[#202124] dark:text-white text-2xl font-bold tracking-tight">How We Use Your Data
+                    </h2>
+                    <p class="text-[#3c4043] dark:text-gray-300 leading-relaxed">
+                        The primary purpose of data collection is to improve our software and services. We process your
+                        information for the following specific purposes:
+                    </p>
+                    <ul class="list-none space-y-4 pl-0">
+                        <li class="flex gap-4">
+                            <div class="mt-1 min-w-[20px] text-primary">
+                                <span class="material-symbols-outlined text-[20px]">analytics</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-[#202124] dark:text-white">Service Improvement:</span>
+                                <span class="text-[#3c4043] dark:text-gray-300"> Analyzing usage trends to optimize app
+                                    performance and user interface design.</span>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1 min-w-[20px] text-primary">
+                                <span class="material-symbols-outlined text-[20px]">bug_report</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-[#202124] dark:text-white">Troubleshooting:</span>
+                                <span class="text-[#3c4043] dark:text-gray-300"> Using crash reports to identify
+                                    technical issues and deploy updates efficiently via Google Play Console.</span>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1 min-w-[20px] text-primary">
+                                <span class="material-symbols-outlined text-[20px]">mail</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-[#202124] dark:text-white">Communication:</span>
+                                <span class="text-[#3c4043] dark:text-gray-300"> Responding to your support requests or
+                                    inquiries sent through our contact forms.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Security Section -->
+                <section class="space-y-6 pt-6" id="security">
+                    <h2 class="text-[#202124] dark:text-white text-2xl font-bold tracking-tight">Security &amp; Third
+                        Parties</h2>
+                    <p class="text-[#3c4043] dark:text-gray-300 leading-relaxed">
+                        We implement industry-standard security measures including SSL encryption for data in transit
+                        and secure server environments. However, no method of transmission over the internet is 100%
+                        secure.
+                    </p>
+                    <div class="bg-blue-50 dark:bg-blue-900/20 p-5 rounded-lg border-l-4 border-primary">
+                        <p class="text-sm text-[#3c4043] dark:text-gray-200">
+                            <strong>Google Play Services:</strong> Our apps may use Google Play Services and Firebase
+                            Analytics, which may collect information used to identify your device for advertising or
+                            analytics purposes. Please refer to Google's Privacy Policy for more details.
+                        </p>
+                    </div>
+                </section>
+                <!-- Accordions for Rights/FAQ -->
+                <section class="space-y-6 pt-6" id="faq">
+                    <h2 class="text-[#202124] dark:text-white text-2xl font-bold tracking-tight">Your Rights &amp;
+                        Choices</h2>
+                    <div class="flex flex-col gap-3">
+                        <details
+                            class="flex flex-col rounded-lg border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark px-[15px] py-[7px] group"
+                            open="">
+                            <summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+                                <p class="text-[#111418] dark:text-white text-base font-medium leading-normal">Right to
+                                    Access &amp; Deletion</p>
+                                <div
+                                    class="text-[#111418] dark:text-white group-open:rotate-180 transition-transform duration-200">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <p class="text-[#5f6368] dark:text-gray-400 text-sm font-normal leading-normal pb-4 pr-8">
+                                You have the right to request a copy of the personal data we hold about you. You may
+                                also request that we delete any personal information we have collected. To initiate a
+                                deletion request, please contact us at our privacy email below.
+                            </p>
+                        </details>
+                        <details
+                            class="flex flex-col rounded-lg border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark px-[15px] py-[7px] group">
+                            <summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+                                <p class="text-[#111418] dark:text-white text-base font-medium leading-normal">
+                                    Children's Privacy</p>
+                                <div
+                                    class="text-[#111418] dark:text-white group-open:rotate-180 transition-transform duration-200">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <p class="text-[#5f6368] dark:text-gray-400 text-sm font-normal leading-normal pb-4 pr-8">
+                                Our services are not directed to children under the age of 13. We do not knowingly
+                                collect personal information from children. If we discover that a child under 13 has
+                                provided us with personal information, we will immediately delete this from our servers.
+                            </p>
+                        </details>
+                        <details
+                            class="flex flex-col rounded-lg border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark px-[15px] py-[7px] group">
+                            <summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+                                <p class="text-[#111418] dark:text-white text-base font-medium leading-normal">Changes
+                                    to This Policy</p>
+                                <div
+                                    class="text-[#111418] dark:text-white group-open:rotate-180 transition-transform duration-200">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <p class="text-[#5f6368] dark:text-gray-400 text-sm font-normal leading-normal pb-4 pr-8">
+                                We may update our Privacy Policy from time to time. Thus, you are advised to review this
+                                page periodically for any changes. We will notify you of any changes by posting the new
+                                Privacy Policy on this page.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+                <!-- Contact Section (Description List) -->
+                <section class="pt-6" id="contact">
+                    <h2 class="text-[#202124] dark:text-white text-2xl font-bold tracking-tight mb-6">Contact Us</h2>
+                    <div
+                        class="bg-white dark:bg-background-dark border border-[#dbdfe6] dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+                        <div
+                            class="grid grid-cols-[30%_1fr] md:grid-cols-[25%_1fr] divide-y divide-[#dbdfe6] dark:divide-gray-700">
+                            <div class="col-span-2 grid grid-cols-subgrid p-5">
+                                <p class="text-[#5f6368] dark:text-gray-400 text-sm font-medium">Data Controller</p>
+                                <p class="text-[#111418] dark:text-white text-sm">Techsang, Inc.</p>
+                            </div>
+                            <div class="col-span-2 grid grid-cols-subgrid p-5">
+                                <p class="text-[#5f6368] dark:text-gray-400 text-sm font-medium">Inquiries</p>
+                                <a class="text-primary hover:underline text-sm font-medium"
+                                    href="mailto:privacy@techsang.com">techsang.official@gmail.com</a>
+                            </div>
+                            <!-- <div class="col-span-2 grid grid-cols-subgrid p-5 bg-surface-light dark:bg-gray-800/50">
+                                <p class="text-[#5f6368] dark:text-gray-400 text-sm font-medium">Mailing Address</p>
+                                <p class="text-[#111418] dark:text-white text-sm">123 Innovation Drive, Tech City, TC
+                                    94043</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <site-footer></site-footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
