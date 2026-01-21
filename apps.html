@@ -309,9 +309,9 @@
                  onclick="location='/app-details.html?appId=${app.id}'">
                 
                 <div class="p-6 flex flex-col flex-grow items-start gap-4">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg flex items-center justify-center text-white mb-2 group-hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 rounded-2xl  shadow-lg flex items-center justify-center text-white mb-2 group-hover:scale-105 transition-transform">
                         <span class="material-symbols-outlined" style="font-size: 32px;">
-                            ${app.icon.value}
+                            <img id="app-icon" src="${app.icon.url}" alt="App Icon" class="w-full h-full object-cover">
                         </span>
                     </div>
 
