@@ -56,6 +56,40 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
+        /* Custom styling for about section */
+        #about-paragraphs h3 {
+            color: #1f2937;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .dark #about-paragraphs h3 {
+            color: #ffffff;
+        }
+
+        #about-paragraphs p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        #about-paragraphs ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #about-paragraphs li {
+            margin-bottom: 0.5rem;
+            line-height: 1.625;
+        }
+
+        #about-paragraphs h3:first-child {
+            margin-top: 0;
+        }
     </style>
 </head>
 
@@ -80,10 +114,7 @@
                     <div class="flex-shrink-0 mx-auto md:mx-0">
                         <div
                             class="w-32 h-32 md:w-40 md:h-40 rounded-2xl shadow-soft overflow-hidden bg-white relative group">
-                            <div id="app-icon-bg"
-                                class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white">
-                                <span id="app-icon-symbol" class="material-symbols-outlined text-[64px]">handyman</span>
-                            </div>
+                            <img id="app-icon" alt="App Icon" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="flex flex-col flex-grow text-center md:text-left gap-4">
@@ -91,7 +122,7 @@
                             <h1 id="app-title"
                                 class="text-3xl md:text-4xl font-display font-semibold text-text-main dark:text-white tracking-tight mb-2">
                             </h1>
-                            <p class="text-lg text-primary font-medium" id="dev-name">Techsang Devs</p>
+                            <p class="text-lg text-primary font-medium" id="dev-name">Techsang Apps</p>
                             <div
                                 class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-text-secondary dark:text-gray-400">
                                 <div class="flex items-center gap-1">
@@ -147,12 +178,14 @@
                                 About this app
                                 <span class="material-symbols-outlined text-primary">arrow_forward</span>
                             </h2>
-                            <div id="about-paragraphs"
+                            <div id="about-paragraphs" class="text-text-secondary dark:text-gray-300 space-y-4">
+                            </div>
+                            <!-- <div id="about-paragraphs"
                                 class="prose prose-blue prose-lg text-text-secondary dark:text-gray-300">
                             </div>
                             <p class="font-medium text-text-main dark:text-white mt-4">Key Benefits:</p>
                             <ul id="benefits-list" class="list-none pl-0 space-y-3 mt-2">
-                            </ul>
+                            </ul> -->
                         </div>
 
                         <div class="space-y-6">
@@ -200,19 +233,19 @@
                                 </div>
                                 <div class="border-t border-gray-100 dark:border-gray-800 pt-4 mt-2">
                                     <div class="flex flex-col gap-2">
-                                        <span
+                                        <!-- <span
                                             class="text-xs font-medium text-text-secondary uppercase tracking-wide">Developer
                                             Contact</span>
                                         <a id="dev-website"
                                             class="flex items-center gap-2 text-sm text-primary hover:underline"
-                                            href="#">
+                                            href="/">
                                             <span class="material-symbols-outlined text-[18px]">language</span> Website
-                                        </a>
+                                        </a> -->
                                         <a id="dev-email"
                                             class="flex items-center gap-2 text-sm text-primary hover:underline"
                                             href="#">
                                             <span class="material-symbols-outlined text-[18px]">mail</span>
-                                            support@techsang.com
+                                            techsang.official@gmail.com
                                         </a>
                                         <a id="dev-privacy"
                                             class="flex items-center gap-2 text-sm text-primary hover:underline"
@@ -270,13 +303,14 @@
                     document.title = `${app.name} - Techsang Devs`;
                     document.getElementById('breadcrumb-current').textContent = app.name;
                     document.getElementById('app-title').textContent = app.name;
-                    document.getElementById('app-icon-symbol').textContent = app.icon.value;
+                    document.getElementById('app-icon').src = app.icon.url;
                     document.getElementById('app-rating-reviews').textContent =
                         `${app.rating} • ${app.reviews} Reviews`;
                     document.getElementById('app-downloads').textContent = `${app.downloads} Downloads`;
                     document.getElementById('app-age-text').textContent = app.ageRating;
                     document.getElementById('app-tagline').textContent = app.tagline;
-                    document.getElementById('install-btn').onclick = () => window.open(app.playStoreUrl, '_blank');
+                    document.getElementById('install-btn').onclick = () => window.open(app.urls.playStoreUrl,
+                        '_blank');
 
                     // 4. Render Screenshots
                     const screenContainer = document.getElementById('screenshot-container');
@@ -287,14 +321,14 @@
                     `).join('');
 
                     // 5. Render About & Benefits
-                    document.getElementById('about-paragraphs').innerHTML = app.about.paragraphs.map(p =>
-                        `<p class="mb-4">${p}</p>`).join('');
-                    document.getElementById('benefits-list').innerHTML = app.about.benefits.map(b => `
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
-                            <span>${b}</span>
-                        </li>
-                    `).join('');
+                    document.getElementById('about-paragraphs').innerHTML = app.about.html
+
+                    // document.getElementById('benefits-list').innerHTML = app.about.benefits.map(b => `
+                    //     <li class="flex items-start gap-3">
+                    //         <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+                    //         <span>${b}</span>
+                    //     </li>
+                    // `).join('');
 
                     // 6. Sidebar App Info
                     document.getElementById('info-updated').textContent = app.info.updatedOn;
@@ -303,11 +337,11 @@
                     document.getElementById('info-android').textContent = app.info.android;
 
                     // 7. Developer Links
-                    document.getElementById('dev-website').href = data.developer.website;
+                    // document.getElementById('dev-website').href = data.developer.website;
                     document.getElementById('dev-email').href = `mailto:${data.developer.email}`;
                     document.getElementById('dev-email').innerHTML =
                         `<span class="material-symbols-outlined text-[18px]">mail</span> ${data.developer.email}`;
-                    document.getElementById('dev-privacy').href = data.developer.privacyPolicy;
+                    document.getElementById('dev-privacy').href = app.urls.privacyPolicy;
 
                     // 8. Render "More Apps" (Excluding current)
                     const moreApps = data.apps.filter(a => a.id !== appId).slice(0, 3);

@@ -1,7 +1,7 @@
 {
     "developer": {
-        "name": "Techsang Devs",
-        "email": "support@techsang.com",
+        "name": "Techsang",
+        "email": "techsang.official@gmail.com",
         "website": "https://techsang.com",
         "privacyPolicy": "/privacy-policy.html"
     },
@@ -11,70 +11,70 @@
             "name": "Sateek Toolkit",
             "tagline": "Sateek Toolkit is a powerful all-in-one utility app designed to simplify your daily tasks. From finance calculators to essential tools like QR/barcode generation, age calculation, and stock market utilities, everything you need is packed into one clean, easy-to-use app.",
             "icon": {
+                "url": "https://play-lh.googleusercontent.com/laf9hVx0d0brzy2NDhv04Y62kWouBGZljJ7P2pufV2zbEzA-6RK2bpA2y99aYv00cedGBw8GQW6a8c0vpshy=w480-h960-rw",
                 "type": "material",
                 "value": "handyman"
             },
-            "rating": 4.8,
-            "reviews": "12K",
-            "downloads": "1M+",
+            "rating": 5,
+            "reviews": "5",
+            "downloads": "5+",
             "ageRating": "Everyone",
-            "playStoreUrl": "https://play.google.com/store/apps/details?id=com.techsang.sateek",
+            "urls": {
+                "privacyPolicy": "/apps/sateek-toolkit/privacy-policy.html",
+                "playStoreUrl": "https://play.google.com/store/apps/details?id=com.techsang.sateek_calculator"
+            },
             "screenshots": [
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuDYaiOcq_sD_deCMnMySfxuc__sU5kiKrqrVIWsI2p2OO5QfoVFEH-9MCMkZBQNGZuLRoEuj5dEV4RW1BN-7lVrgnNmB7C6HTTK-cq9fK_y9IPP1vsWKmMV6qdyDNiHciM3J-Cla-GVW2b0h0Nz_ak8rxYMnfjxTGMCg6yOyP_zW1VHOltOKlLFWgvoZPhEpbdV0aVWrXWdkCLnklqpleC5cXvCQ2Vr5GLN8lXfRVPtn4BbZjjKlnU2quVH7XYn5B9dQUU2TaE0-Psy",
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuBnDCGRnQVAUq2GGqXPYxcGc55qnlnjxY1sb6ihZEr5igx3Qu1BaBtK7b8jQu6ovtVzLdkhzm41-5FqjRvSfgS71uqWh-Q8WT3plomvNuvfw-McdlxLousgqu8Krytjuc6t6ykuRhqeMq4UfBnSzrbNBlfduSo5ly_TbrkajeOU-GZP6z2enFgwCEYFfvf1vxYD-gp3yo0_3SzTXI4nrJSrmdCd8Vm7dKmac5ne4HnsmWK89j2M-xJiTHKknOwKs4RmD81itY9wOYXn"
+                "https://play-lh.googleusercontent.com/ThzwrMBe01iAI6ovpauP_COcHNvftRodhCPjkFQZBn0rAO8GuT4R_mSYpGrl-RB0pzpwLRTBxyj9puDT_6yv=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/iV_t569WJkFC1-V2gesv3LNsHm52PvZPWv3OHXvWW0POR438Org-y63sX0duo_wDAGi74IGUPZBMX5Xw5VUs=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/CMVXMBv5wc80pGILKVqER2j1wxbb1QLIfTEn2CZzc7b0g4Q1zvdBpiK8sDBnjuJGTD_CByDU1Toduzg7tn7PiQ=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/ektRMfwlRzCR9mfaaxIvh6cVaLKPmHwPA-3F7X_ov0kdconqlAWlsdXOvflVqAS9kphDprNeh3h3T86TfGaovM0=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/1kiYPeClldcGYw-9WwPoLceQK1wt1Bg9ni315DfbFQlDbgV3F58uLjDf2zoIIbl6bmmkRnycEYbo81PJ1wMD8g=w1052-h592-rw"
             ],
             "about": {
-                "paragraphs": [
-                    "Experience the power of efficiency with Sateek Toolkit. Whether you are a power user or just looking to simplify your digital life.",
-                    "From system cleaning to network analysis, Sateek Toolkit handles it all with a minimal footprint and maximum performance."
-                ],
-                "benefits": [
-                    "Instant cache cleaning and memory optimization.",
-                    "Detailed battery usage analytics to prolong life.",
-                    "Secure app locker to protect your sensitive data.",
-                    "Ad-free experience for premium users."
-                ]
+                "html": "<p>Sateek Toolkit is a powerful all-in-one utility app designed to simplify your daily tasks. From finance calculators to essential tools like QR/barcode generation, age calculation, and stock market utilities, everything you need is packed into one clean, easy-to-use app. Whether you're a student, professional, trader, or construction worker, Sateek Toolkit brings accuracy (Sateek) and convenience together.</p></br><h3>Finance Calculators</h3><p>Handle all your financial calculations in seconds:</p><ul><li>Simple Interest & Compound Interest</li><li>GST & Tax Calculator</li><li>Loan EMI Calculator</li><li>Employee Gratuity Calculator</li></ul></br><h3>Essential Tools</h3><p>Useful, accurate tools for everyday tasks:</p><ul><li>Bubble Level – helpful for construction work or DIY tasks</li><li>QR Code Generator – create QR codes instantly</li><li>Barcode Generator – generate barcodes with a download option</li></ul></br><h3>Stock Market Utility</h3><p>Calculate Stock Average easily and get accurate results for better trading decisions.</p></br><h3>Advanced Age Calculator</h3><p>Get your exact age in years, months, weeks, days, hours, minutes, and seconds. Perfect for birthdays, documents, and personal records.</p></br><h3>Favorites Section</h3><p>Add any tool to your favorites and access everything you use frequently — all in one place.</p></br><h3>Help & Feedback</h3><p>Have an issue or want a new feature? Use the Help & Feedback section in Settings to share your thoughts directly.</p></br><h3>Why Sateek Toolkit?</h3><ul><li>Clean and simple interface</li><li>Accurate results</li><li>Fast performance</li><li>Multiple tools in one app</li><li>Regular improvements and updates</li></ul>"
             },
             "info": {
-                "updatedOn": "Oct 24, 2023",
-                "size": "24 MB",
-                "version": "2.4.1",
+                "ReleasedOn": "Dec 15, 2025",
+                "updatedOn": "Jan 8, 2026",
+                "size": "8 MB",
+                "version": "1.0.3",
                 "android": "8.0 and up"
             }
         },
         {
-            "id": "bachat-box",
-            "name": "Bachat Box",
-            "tagline": "The ultimate money saving app for Android.",
+            "id": "bachatbox",
+            "name": "Bachat Box – Goal Based Saving",
+            "tagline": "💰 Bachat Box – Savings Goals App & Smart Expense Tracker. One Box a Day. Goals Guaranteed. Bachat Box is a simple and powerful personal finance app designed to help you build better money habits. Track expenses, plan budgets, and achieve your savings goals with clarity, consistency, and confidence.",
             "icon": {
+                "url": "https://play-lh.googleusercontent.com/mLPXAZFO3ETfRmk414fSYH1wsyx3kGrQHnfrh2npMVs98y9F_G4btWQ0CLp2fYkHJ-oRzoumTx8Yl1TAkQ56Lg=w480-h960-rw",
                 "type": "material",
                 "value": "handyman"
             },
-            "rating": 4.8,
-            "reviews": "12K",
-            "downloads": "1M+",
+            "rating": 4.5,
+            "reviews": "10",
+            "downloads": "100+",
             "ageRating": "Everyone",
-            "playStoreUrl": "https://play.google.com/store/apps/details?id=com.techsang.sateek",
+            "urls": {
+                "privacyPolicy": "/apps/bachat-box/privacy-policy.html",
+                "playStoreUrl": "https://play.google.com/store/apps/details?id=com.techsang.bachatbox"
+            },
             "screenshots": [
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuDYaiOcq_sD_deCMnMySfxuc__sU5kiKrqrVIWsI2p2OO5QfoVFEH-9MCMkZBQNGZuLRoEuj5dEV4RW1BN-7lVrgnNmB7C6HTTK-cq9fK_y9IPP1vsWKmMV6qdyDNiHciM3J-Cla-GVW2b0h0Nz_ak8rxYMnfjxTGMCg6yOyP_zW1VHOltOKlLFWgvoZPhEpbdV0aVWrXWdkCLnklqpleC5cXvCQ2Vr5GLN8lXfRVPtn4BbZjjKlnU2quVH7XYn5B9dQUU2TaE0-Psy",
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuBnDCGRnQVAUq2GGqXPYxcGc55qnlnjxY1sb6ihZEr5igx3Qu1BaBtK7b8jQu6ovtVzLdkhzm41-5FqjRvSfgS71uqWh-Q8WT3plomvNuvfw-McdlxLousgqu8Krytjuc6t6ykuRhqeMq4UfBnSzrbNBlfduSo5ly_TbrkajeOU-GZP6z2enFgwCEYFfvf1vxYD-gp3yo0_3SzTXI4nrJSrmdCd8Vm7dKmac5ne4HnsmWK89j2M-xJiTHKknOwKs4RmD81itY9wOYXn"
+                "https://play-lh.googleusercontent.com/pE0hQepM_GCLBg-nUzJo8aEtZFNSreSxVJg6PZTrE5bUaMmsm-Y5IIgc3aGSZZ03tmogv0ptQaMwYdg_BR-row=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/J7zpFf7oYPpJSA0IBGu_0f_hOldJRRNIBunouTlRdaB4VJIz9z7ccl7vLM7TXEgFpDq2UZ5ekZ0ICRCLfohOVg=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/JFk57OQEA10RKEm0aaXYTU2obI__1rfGE_kXVBXnejezpkUANCrx_kA4KtyL2ZCsIWRmVZh6BY63y1SAKFR0gg=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/OPgDA9yzRlGbVfnLMBrQuJ-i8RjVC6yJbetUOdOOIIl2-2S_FijKdh3BACqTu5QIw6_vYCu0HVzX6MFzb0r8=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/dwTCTkB3qewfUVyEQCit26JrWZ-fbNH6E9em4C3JnjIy_bmyW2DZZ1AwH9UY9OdpneSSdYiaJvlVhuxgojTRiBU=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/wg7-_GuXSd97m1QTOYORrY3hrnq_GYBU0Ze8k8rg3Ot4vi_ak30kutH_yLucTv45_0oPpmp6mbyRLivqVVcEJr8=w1052-h592-rw",
+                "https://play-lh.googleusercontent.com/3LGGgoPcOOpjpxzJ22JCRymYC9D9g4lREdyoy-AKqsz_4DNoJ9Vf1hAEX7Lp9GT2SV1WH7NveqKmgC6ZqUWL6JU=w1052-h592-rw"
             ],
             "about": {
-                "paragraphs": [
-                    "Experience the power of efficiency with Sateek Toolkit. Whether you are a power user or just looking to simplify your digital life.",
-                    "From system cleaning to network analysis, Sateek Toolkit handles it all with a minimal footprint and maximum performance."
-                ],
-                "benefits": [
-                    "Instant cache cleaning and memory optimization.",
-                    "Detailed battery usage analytics to prolong life.",
-                    "Secure app locker to protect your sensitive data.",
-                    "Ad-free experience for premium users."
-                ]
+                "html": "<p>Bachat Box is a simple and powerful personal finance app designed to help you build better money habits. Track expenses, plan budgets, and achieve your savings goals with clarity, consistency, and confidence. This money management app focuses on daily progress—because small steps create long-term financial freedom.</p></br><p><strong>Savings Goals Made Simple</strong></p><p>Turn your dreams into achievable goals using a proven daily saving method.</p><ul><li>Create savings goals with a target amount and date</li><li>Follow the One Box a Day saving approach</li><li>Visual progress tracking from 0% to 100%</li><li>Stay motivated with clear milestones and goal completion success</li></ul></br><p><strong>Expense Tracker & Budget Planner</strong></p><p>Take control of your finances with a clean and easy-to-use expense tracker.</p><ul><li>Track daily income and expenses</li><li>Categorize spending and earnings</li><li>Understand your money flow</li><li>Improve budgeting and financial planning</li></ul></br><p><strong>Daily Reminders for Consistent Saving</strong></p><p>Consistency is the key to smart money management.</p><ul><li>Optional daily reminders to save and track expenses</li><li>Stay disciplined without stress</li><li>Never forget your financial goals</li></ul></br><p><strong>Private, Offline & Secure</strong></p><p>Your privacy comes first.</p><ul><li>No sign-up required</li><li>No personal data collected</li><li>Works completely offline</li><li>All data stored locally on your device</li><li>Premium users get encrypted local backups</li></ul></br><p><strong>Premium Upgrade — One-Time Payment</strong></p><p>Unlock full features with a one-time payment of ₹249.</p><ul><li>Ad-free experience</li><li>Unlimited savings goals</li><li>Unlimited expense tracking</li><li>Secure backup & restore</li><li>Smart reminders</li><li>Priority support</li></ul><p>No subscriptions. No monthly fees. Lifetime access.</p></br><p><strong>Built for Short-Term & Long-Term Money Habits</strong></p><p>Bachat Box is built for people who want simple budgeting, clear savings planning, private money tracking, and financial discipline for both short-term and long-term goals. We actively improve the app based on user feedback.</p></br><p><strong>Made for India</strong></p><p>Bachat Box is designed keeping Indian saving habits in mind — simple, effective, and practical. Start your saving journey today. Save daily. Build wealth.</p>"
             },
             "info": {
-                "updatedOn": "Oct 24, 2023",
-                "size": "24 MB",
-                "version": "2.4.1",
+                "ReleasedOn": "Dec 15, 2025",
+                "updatedOn": "Jan 8, 2026",
+                "size": "23 MB",
+                "version": "v1.0.1",
                 "android": "8.0 and up"
             }
         }
