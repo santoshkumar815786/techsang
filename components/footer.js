@@ -30,6 +30,29 @@ class SiteFooter extends HTMLElement {
                                 </path>
                             </svg>
                         </a> -->
+                        <!-- Instagram -->
+                            <a class="text-slate-400 hover:text-primary dark:hover:text-gray-300 transition-colors"
+                            href="https://www.instagram.com/techsang.official"
+                            target="_blank">
+                                <span class="sr-only">Instagram</span>
+                                <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.28 3.5 3.5 5.28 3.5 7.75v8.5c0 2.47 1.78 4.25 4.25 4.25h8.5c2.47 0 4.25-1.78 4.25-4.25v-8.5c0-2.47-1.78-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a1.13 1.13 0 1 1 0-2.26 1.13 1.13 0 0 1 0 2.26z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a class="text-slate-400 hover:text-primary dark:hover:text-gray-300 transition-colors"
+                            href="https://www.facebook.com/YOUR_FACEBOOK_PROFILE"
+                            target="_blank">
+                                <span class="sr-only">Facebook</span>
+                                <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.407.593 24 1.324 24h11.495v-9.294H9.691V11.01h3.128V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.407 24 24 23.407 24 22.676V1.324C24 .593 23.407 0 22.676 0z">
+                                    </path>
+                                </svg>
+                            </a>
                         <a class="text-slate-400 hover:text-primary dark:hover:text-gray-300 transition-colors"
                             href="https://www.linkedin.com/in/santosh-kumar815/" target="_blank">
                             <span class="sr-only">LinkedIn</span>
