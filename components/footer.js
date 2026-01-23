@@ -6,12 +6,20 @@ class SiteFooter extends HTMLElement {
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
                 <div class="col-span-2 lg:col-span-2">
                     <div class="flex items-center gap-2 mb-4">
-                        <span class="material-symbols-outlined text-slate-500 text-2xl">code_blocks</span>
-                        <span class="text-lg font-semibold text-slate-700 dark:text-gray-200">Techsang</span>
-                    </div>
-                    <p class="text-slate-500 dark:text-gray-400 max-w-xs leading-relaxed mb-6">
-                        Building the future of digital experiences. We create apps that matter and solutions that scale.
-                    </p>
+                     <img
+                            src="/src/techsang_icon.png"
+                            alt="Techsang Logo"
+                            class="w-8 h-8 text-primary text-3xl group-hover:scale-105 transition-transform"
+                        />
+                    <span class="text-lg font-semibold text-slate-700 dark:text-gray-200">
+                        Techsang
+                    </span>
+                </div>
+
+                <p class="text-slate-500 dark:text-gray-400 max-w-xs leading-relaxed mb-6">
+                    Building the future of digital experiences. We create apps that matter and solutions that scale.
+                </p>
+
                     <div class="flex gap-4">
                          <!-- <a class="text-slate-400 hover:text-primary dark:hover:text-gray-300 transition-colors"
                             href="#">

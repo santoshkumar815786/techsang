@@ -1,6 +1,6 @@
 class SiteHeader extends HTMLElement {
   connectedCallback() {
-     const activeMenu = this.getAttribute('active');
+    const activeMenu = this.getAttribute("active");
 
     this.innerHTML = `
       <header
@@ -9,24 +9,29 @@ class SiteHeader extends HTMLElement {
             <div class="flex items-center justify-between w-full max-w-7xl h-16">
                 <a class="flex items-center gap-2.5 cursor-pointer select-none group" href="/">
                     <div class="relative flex items-center justify-center">
-                        <span
-                            class="material-symbols-outlined text-primary text-3xl group-hover:scale-105 transition-transform">code_blocks</span>
+                        <img
+                            src="/src/techsang_icon.png"
+                            alt="Techsang Logo"
+                            class="w-8 h-8 text-primary text-3xl group-hover:scale-105 transition-transform"
+                        />
                     </div>
-                    <span class="text-xl font-medium text-slate-700 dark:text-gray-200 tracking-tight">Techsang</span>
+                    <span class="text-xl font-medium text-slate-700 dark:text-gray-200 tracking-tight">
+                        Techsang
+                    </span>
                 </a>
                 <div class="hidden md:flex items-center gap-2">
                     <nav class="flex items-center gap-1 p-1 bg-transparent rounded-full">
-                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'home' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
+                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === "home" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
                             href="/">Home</a>
-                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'services' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
+                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === "services" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
                             href="/services.html">Services</a>
-                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'apps' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
+                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === "apps" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
                             href="/apps.html">Apps</a>
                         <!--
-                            <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'about_us' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
+                            <a class="px-5 py-2 text-sm font-medium ${activeMenu === "about_us" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
                                 href="/about-us.html">About us</a>
                         -->
-                       <a class="px-5 py-2 text-sm font-medium ${activeMenu === 'contact_us' ? 'text-primary bg-blue-50 dark:bg-blue-900/20' : 'text-slate-600 dark:text-gray-300'} rounded-full transition-all"
+                       <a class="px-5 py-2 text-sm font-medium ${activeMenu === "contact_us" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
                             href="/contact.html">Contact us</a>
                     </nav>
                 </div>
