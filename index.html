@@ -282,7 +282,7 @@
 
                     // Note: We use the first screenshot for the card preview
                     return `
-                    <div class="snap-start shrink-0 w-[280px] group cursor-pointer" onclick="window.open('/app-details.html?appId=${app.id}', '_blank')">
+                    <div class="snap-start shrink-0 w-[280px] group cursor-pointer" onclick="window.open('${app.route}')">
                         <div class="bg-background-light dark:bg-[#1a222e] rounded-xl p-4 hover:bg-gray-50 dark:hover:bg-[#202938] transition-colors border border-transparent hover:border-[#dadce0] dark:hover:border-gray-700 relative">
                             <div class="w-full aspect-video rounded-lg mb-4 bg-cover bg-center shadow-sm"
                                 style="background-image: url('${app.bannerUrl}');"

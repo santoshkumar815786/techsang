@@ -8,14 +8,15 @@
     "apps": [
         {
             "id": "sateek-toolkit",
-            "name": "Sateek Toolkit",
+            "route": "/apps/sateek-toolkit.html",
+            "name": "Sateek Toolkit - All in one toolkit",
             "tagline": "Sateek Toolkit is a powerful all-in-one utility app designed to simplify your daily tasks. From finance calculators to essential tools like QR/barcode generation, age calculation, and stock market utilities, everything you need is packed into one clean, easy-to-use app.",
             "icon": {
                 "url": "https://play-lh.googleusercontent.com/laf9hVx0d0brzy2NDhv04Y62kWouBGZljJ7P2pufV2zbEzA-6RK2bpA2y99aYv00cedGBw8GQW6a8c0vpshy=w480-h960-rw",
                 "type": "material",
                 "value": "handyman"
             },
-            "bannerUrl": "https://play-lh.googleusercontent.com/TTGC0ZlSfCdH4cJmnCwceCCrucIq0Hl8llUofneD1xuKYZgLSr2EPXQ5X5JZDjmZrlpnGFokCYZ9UbfzMq9H=w832-h470-rw",
+            "bannerUrl": "/apps/sateek-toolkit/images/banner/sateek-toolkit-feature-banner.webp",
             "rating": 5,
             "reviews": "5",
             "downloads": "5+",
@@ -44,6 +45,7 @@
         },
         {
             "id": "bachatbox",
+            "route": "/apps/bachat-box-goal-based-saving.html",
             "name": "Bachat Box – Goal Based Saving",
             "tagline": "💰 Bachat Box – Savings Goals App & Smart Expense Tracker. One Box a Day. Goals Guaranteed. Bachat Box is a simple and powerful personal finance app designed to help you build better money habits. Track expenses, plan budgets, and achieve your savings goals with clarity, consistency, and confidence.",
             "icon": {
@@ -51,7 +53,7 @@
                 "type": "material",
                 "value": "handyman"
             },
-            "bannerUrl": "",
+            "bannerUrl": "/apps/bachat-box/images/banner/bachatbox-playstore-isting-feature-banner.webp",
             "rating": 4.5,
             "reviews": "10",
             "downloads": "100+",
