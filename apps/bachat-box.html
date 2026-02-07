@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bachat Box – Goal Based Saving</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4343f4",
+                        "primary-dark": "#3232b7",
+                        "background-light": "#ffffff",
+                        "background-offset": "#f5f5f8",
+                        "background-dark": "#101022",
+                        "background-dark-offset": "#1a1a2e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15)',
+                        'card': '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom styling for about section */
+        #about-paragraphs h3 {
+            color: #1f2937;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .dark #about-paragraphs h3 {
+            color: #ffffff;
+        }
+
+        #about-paragraphs p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        #about-paragraphs ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #about-paragraphs li {
+            margin-bottom: 0.5rem;
+            line-height: 1.625;
+        }
+
+        #about-paragraphs h3:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased selection:bg-primary/30">
+    <div class="relative flex flex-col min-h-screen">
+        <site-header active="apps"></site-header>
+
+        <main class="flex-grow flex flex-col items-center w-full">
+            <div class="w-full max-w-5xl px-4 md:px-6 py-4">
+                <nav class="flex text-sm text-text-secondary dark:text-gray-400">
+                    <a class="hover:text-primary hover:underline" href="/">Home</a>
+                    <span class="mx-2">/</span>
+                    <a class="hover:text-primary hover:underline" href="/apps">Apps</a>
+                    <span class="mx-2">/</span>
+                    <span id="breadcrumb-current" class="text-text-main dark:text-white font-medium">Bachat Box – Goal
+                        Based Saving</span>
+                </nav>
+            </div>
+
+            <div class="w-full max-w-5xl px-4 md:px-6 py-8 md:py-12">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="flex-shrink-0 mx-auto md:mx-0">
+                        <div
+                            class="w-32 h-32 md:w-40 md:h-40 rounded-2xl shadow-soft overflow-hidden bg-white relative group">
+                            <img id="app-icon"
+                                src="https://play-lh.googleusercontent.com/mLPXAZFO3ETfRmk414fSYH1wsyx3kGrQHnfrh2npMVs98y9F_G4btWQ0CLp2fYkHJ-oRzoumTx8Yl1TAkQ56Lg=w480-h960-rw"
+                                alt="App Icon" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-grow text-center md:text-left gap-4">
+                        <div>
+                            <h1 id="app-title"
+                                class="text-3xl md:text-4xl font-display font-semibold text-text-main dark:text-white tracking-tight mb-2">
+                                Bachat Box – Goal Based Saving
+                            </h1>
+                            <p class="text-lg text-primary font-medium" id="dev-name">Techsang Apps</p>
+                            <div
+                                class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-text-secondary dark:text-gray-400">
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span id="app-rating-reviews">
+                                        4.5 (10 Reviews)
+                                    </span>
+                                </div>
+                                <span>•</span>
+                                <div id="app-downloads">
+                                    500 Downloads
+                                </div>
+                                <span>•</span>
+                                <div class="flex items-center gap-1">
+                                    <span class="bg-gray-200 dark:bg-gray-700 text-[10px] px-1 rounded"
+                                        id="app-age-rating">E</span>
+                                    <span id="app-age-text">Everyone</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="app-tagline"
+                            class="text-text-secondary dark:text-gray-300 max-w-2xl text-base leading-relaxed">
+                            💰 Bachat Box – Savings Goals App & Smart Expense Tracker. One Box a Day. Goals Guaranteed.
+                            Bachat Box is a simple and powerful personal finance app designed to help you build better
+                            money habits. Track expenses, plan budgets, and achieve your savings goals with clarity,
+                            consistency, and confidence.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-2 justify-center md:justify-start">
+                            <button id="install-btn"
+                                onclick="window.open('https://play.google.com/store/apps/details?id=com.techsang.bachatbox', '_blank')"
+                                class="flex items-center justify-center gap-2 bg-primary hover:bg-blue-600 text-white h-11 px-8 rounded-lg font-medium transition-all shadow-md active:scale-95 w-full sm:w-auto">
+                                <span class="material-symbols-outlined fill">install_mobile</span>
+                                <span>Install on Google Play</span>
+                            </button>
+                            <button onclick="window.navigator.share({url: window.location.href, title: document.title})"
+                                class="flex items-center justify-center gap-2 border border-[#dadce0] dark:border-gray-700 hover:bg-background-alt dark:hover:bg-gray-800 text-primary h-11 px-6 rounded-lg font-medium transition-colors w-full sm:w-auto">
+                                <span class="material-symbols-outlined">share</span>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-5xl border-t border-[#dadce0] dark:border-gray-800 my-4"></div>
+
+            <section class="w-full max-w-5xl px-4 md:px-6 py-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold text-text-main dark:text-white">Screenshots</h2>
+                </div>
+                <div id="screenshot-container"
+                    class="flex overflow-x-auto gap-4 pb-8 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide snap-x">
+                    <div
+                        class="snap-center shrink-0 w-[240px] md:w-[280px] aspect-[9/16] rounded-xl overflow-hidden shadow-soft border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 group">
+                        <div class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                            style="background-image: url('https://play-lh.googleusercontent.com/pE0hQepM_GCLBg-nUzJo8aEtZFNSreSxVJg6PZTrE5bUaMmsm-Y5IIgc3aGSZZ03tmogv0ptQaMwYdg_BR-row=w1052-h592-rw');">
+                        </div>
+                    </div>
+                    <div
+                        class="snap-center shrink-0 w-[240px] md:w-[280px] aspect-[9/16] rounded-xl overflow-hidden shadow-soft border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 group">
+                        <div class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                            style="background-image: url('https://play-lh.googleusercontent.com/J7zpFf7oYPpJSA0IBGu_0f_hOldJRRNIBunouTlRdaB4VJIz9z7ccl7vLM7TXEgFpDq2UZ5ekZ0ICRCLfohOVg=w1052-h592-rw');">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="w-full bg-background-alt dark:bg-gray-900/50 py-12 border-t border-[#dadce0] dark:border-gray-800">
+                <div class="max-w-5xl mx-auto px-4 md:px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2 space-y-6">
+                            <h2 class="text-xl font-semibold text-text-main dark:text-white flex items-center gap-2">
+                                About this app
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </h2>
+                            <div id="about-paragraphs" class="text-text-secondary dark:text-gray-300 space-y-4">
+                                <p>Bachat Box is a simple and powerful personal finance app designed to help you build
+                                    better money habits. Track expenses, plan budgets, and achieve your savings goals
+                                    with clarity, consistency, and confidence. This money management app focuses on
+                                    daily progress—because small steps create long-term financial freedom.</p></br>
+                                <p><strong>Savings Goals Made Simple</strong></p>
+                                <p>Turn your dreams into achievable goals using a proven daily saving method.</p>
+                                <ul>
+                                    <li>Create savings goals with a target amount and date</li>
+                                    <li>Follow the One Box a Day saving approach</li>
+                                    <li>Visual progress tracking from 0% to 100%</li>
+                                    <li>Stay motivated with clear milestones and goal completion success</li>
+                                </ul></br>
+                                <p><strong>Expense Tracker & Budget Planner</strong></p>
+                                <p>Take control of your finances with a clean and easy-to-use expense tracker.</p>
+                                <ul>
+                                    <li>Track daily income and expenses</li>
+                                    <li>Categorize spending and earnings</li>
+                                    <li>Understand your money flow</li>
+                                    <li>Improve budgeting and financial planning</li>
+                                </ul></br>
+                                <p><strong>Daily Reminders for Consistent Saving</strong></p>
+                                <p>Consistency is the key to smart money management.</p>
+                                <ul>
+                                    <li>Optional daily reminders to save and track expenses</li>
+                                    <li>Stay disciplined without stress</li>
+                                    <li>Never forget your financial goals</li>
+                                </ul></br>
+                                <p><strong>Private, Offline & Secure</strong></p>
+                                <p>Your privacy comes first.</p>
+                                <ul>
+                                    <li>No sign-up required</li>
+                                    <li>No personal data collected</li>
+                                    <li>Works completely offline</li>
+                                    <li>All data stored locally on your device</li>
+                                    <li>Premium users get encrypted local backups</li>
+                                </ul></br>
+                                <p><strong>Premium Upgrade — One-Time Payment</strong></p>
+                                <p>Unlock full features with a one-time payment of ₹249.</p>
+                                <ul>
+                                    <li>Ad-free experience</li>
+                                    <li>Unlimited savings goals</li>
+                                    <li>Unlimited expense tracking</li>
+                                    <li>Secure backup & restore</li>
+                                    <li>Smart reminders</li>
+                                    <li>Priority support</li>
+                                </ul>
+                                <p>No subscriptions. No monthly fees. Lifetime access.</p></br>
+                                <p><strong>Built for Short-Term & Long-Term Money Habits</strong></p>
+                                <p>Bachat Box is built for people who want simple budgeting, clear savings planning,
+                                    private money tracking, and financial discipline for both short-term and long-term
+                                    goals. We actively improve the app based on user feedback.</p></br>
+                                <p><strong>Made for India</strong></p>
+                                <p>Bachat Box is designed keeping Indian saving habits in mind — simple, effective, and
+                                    practical. Start your saving journey today. Save daily. Build wealth.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <h2 class="text-xl font-semibold text-text-main dark:text-white">App Info</h2>
+                            <div
+                                class="bg-white dark:bg-background-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm space-y-5">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">update</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Updated
+                                            on</span>
+                                        <span id="info-updated"
+                                            class="text-sm font-medium text-text-main dark:text-white">Jan 8,
+                                            2026</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">sd_storage</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Download
+                                            Size</span>
+                                        <span id="info-size"
+                                            class="text-sm font-medium text-text-main dark:text-white">23 MB</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">smartphone</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Version</span>
+                                        <span id="info-version"
+                                            class="text-sm font-medium text-text-main dark:text-white">v1.0.1</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-text-secondary">android</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Requires
+                                            Android</span>
+                                        <span id="info-android"
+                                            class="text-sm font-medium text-text-main dark:text-white">8.0 and up</span>
+                                    </div>
+                                </div>
+                                <div class="border-t border-gray-100 dark:border-gray-800 pt-4 mt-2">
+                                    <div class="flex flex-col gap-2">
+                                        <!-- <span
+                                            class="text-xs font-medium text-text-secondary uppercase tracking-wide">Developer
+                                            Contact</span>
+                                        <a id="dev-website"
+                                            class="flex items-center gap-2 text-sm text-primary hover:underline"
+                                            href="/">
+                                            <span class="material-symbols-outlined text-[18px]">language</span> Website
+                                        </a> -->
+                                        <a id="dev-email"
+                                            class="flex items-center gap-2 text-sm text-primary hover:underline"
+                                            href="mailto:techsang.official@gmail.com">
+                                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                                            techsang.official@gmail.com
+                                        </a>
+                                        <a id="dev-privacy"
+                                            class="flex items-center gap-2 text-sm text-primary hover:underline"
+                                            href="/apps/bachat-box/privacy-policy.html">
+                                            <span class="material-symbols-outlined text-[18px]">privacy_tip</span>
+                                            Privacy Policy
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-full max-w-5xl px-4 md:px-6 py-12">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold text-text-main dark:text-white">More by Techsang</h2>
+                    <a class="text-primary text-sm font-medium hover:underline" href="/apps">See all</a>
+                </div>
+                <div id="more-apps-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <a class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-alt dark:hover:bg-gray-800 transition-colors group"
+                        href="/app-details.html?appId=sateek-toolkit">
+                        <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 shadow-sm">
+                            <img src="https://play-lh.googleusercontent.com/laf9hVx0d0brzy2NDhv04Y62kWouBGZljJ7P2pufV2zbEzA-6RK2bpA2y99aYv00cedGBw8GQW6a8c0vpshy=w480-h960-rw"
+                                alt="Sateek Toolkit" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h3
+                                class="font-medium text-text-main dark:text-white group-hover:text-primary transition-colors">
+                                Sateek Toolkit</h3>
+                            <p class="text-sm text-text-secondary dark:text-gray-400 line-clamp-2 mt-1">Sateek Toolkit
+                                is a powerful all-in-one utility app designed to simplify your daily tasks. From finance
+                                calculators to essential tools like QR/barcode generation, age calculation, and stock
+                                market utilities, everything you need is packed into one clean, easy-to-use app.</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span class="material-symbols-outlined text-xs text-text-secondary">star</span>
+                                <span class="text-xs text-text-secondary">4.5</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <site-footer></site-footer>
+
+        <script src="/components/header.js"></script>
+        <script src="/components/footer.js"></script>
+    </div>
+</body>
+
+</html>
