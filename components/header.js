@@ -10,8 +10,8 @@ class SiteHeader extends HTMLElement {
                 <a class="flex items-center gap-2.5 cursor-pointer select-none group" href="/">
                     <div class="relative flex items-center justify-center">
                         <img
-                            src="/src/techsang_icon.png"
-                            alt="Techsang Logo"
+                            src="/src/images/techsang-mobile-app-development-logo.webp"
+                            alt="TechSang app development company building Android apps, websites, and scalable backend systems"
                             class="w-8 h-8 text-primary text-3xl group-hover:scale-105 transition-transform"
                         />
                     </div>
