@@ -108,17 +108,21 @@ class SiteFooter extends HTMLElement {
                 </div>
             </div>
             <div
-                class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-500 dark:text-gray-500">© 2024 Techsang. All rights reserved.</p>
+                class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col items-center gap-4 text-center">
+                
+                <p class="text-slate-500 dark:text-gray-500">
+                    © 2024 Techsang. All rights reserved.
+                </p>
+
+                <!-- Optional links (will still be centered) -->
+                <!--
                 <div class="flex gap-6">
-                    <a class="text-slate-500 hover:text-slate-700 dark:text-gray-500 dark:hover:text-gray-300 text-xs"
-                        href="#">Terms</a>
-                    <a class="text-slate-500 hover:text-slate-700 dark:text-gray-500 dark:hover:text-gray-300 text-xs"
-                        href="#">Privacy</a>
-                    <a class="text-slate-500 hover:text-slate-700 dark:text-gray-500 dark:hover:text-gray-300 text-xs"
-                        href="#">Cookies</a>
+                    <a class="text-slate-500 hover:text-slate-700 dark:text-gray-500 dark:hover:text-gray-300 text-xs" href="#">Terms</a>
+                    <a class="text-slate-500 hover:text-slate-700 dark:text-gray-500 dark:hover:text-gray-300 text-xs" href="#">Privacy</a>
+                    <a class="text-slate-500 hover:text-slate-700 dark:text-gray-500 dark:hover:text-gray-300 text-xs" href="#">Cookies</a>
                 </div>
-            </div>
+                -->
+                </div>
         </div>
     </footer>
     `;
