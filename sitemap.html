@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sitemap - Techsang</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4343f4",
+                        "primary-dark": "#3232b7",
+                        "background-light": "#ffffff",
+                        "background-offset": "#f5f5f8",
+                        "background-dark": "#101022",
+                        "background-dark-offset": "#1a1a2e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15)',
+                        'card': '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'24;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden antialiased selection:bg-primary/30">
+    <!-- Top Navigation using component-->
+    <site-header></site-header>
+
+    <main class="flex flex-col min-h-screen">
+        <section
+            class="relative px-4 py-16 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark overflow-hidden">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none opacity-30 dark:opacity-10">
+                <div class="absolute top-0 left-10 w-72 h-72 bg-primary/10 rounded-full blur-[100px]"></div>
+                <div class="absolute bottom-0 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"></div>
+            </div>
+            <div class="relative z-10 mx-auto max-w-7xl">
+                <div class="text-left mb-12">
+                    <h1 class="text-4xl font-black tracking-tight text-slate-900 dark:text-white sm:text-5xl">
+                        Site <span class="text-primary">Map</span>
+                    </h1>
+                    <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+                        A complete overview of the Techsang website structure, services, and latest insights.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-white dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all hover:shadow-md">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary">dynamic_feed</span>
+                            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Core Pages</h2>
+                        </div>
+                        <ul class="space-y-4">
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="/"><span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    Home</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> About
+                                    Us</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    Services</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    Contact Us</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all hover:shadow-md">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary">terminal</span>
+                            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Services</h2>
+                        </div>
+                        <ul class="space-y-4">
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> App
+                                    Development</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Web
+                                    Development</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    Backend &amp; API</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> UI/UX
+                                    Design</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> DevOps
+                                    Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all hover:shadow-md">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary">menu_book</span>
+                            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Resources</h2>
+                        </div>
+                        <ul class="space-y-4">
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span class="material-symbols-outlined text-sm text-slate-400">home</span>
+                                    Blog Home</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span
+                                        class="material-symbols-outlined text-sm text-slate-400">smartphone</span>
+                                    Android Trends</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span
+                                        class="material-symbols-outlined text-sm text-slate-400">language</span> Web
+                                    Insights</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span
+                                        class="material-symbols-outlined text-sm text-slate-400">database</span> Backend
+                                    Logic</a></li>
+                            <li><a class="text-primary hover:underline font-medium flex items-center gap-2"
+                                    href="#"><span
+                                        class="material-symbols-outlined text-sm text-slate-400">palette</span> Design
+                                    Guidelines</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all hover:shadow-md">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary">article</span>
+                            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Latest Posts</h2>
+                        </div>
+                        <ul class="space-y-4">
+                            <li>
+                                <a class="group block" href="#">
+                                    <span class="block text-xs text-slate-500 mb-1">March 12, 2024</span>
+                                    <span
+                                        class="text-primary hover:underline font-medium text-sm line-clamp-2 leading-snug">Scaling
+                                        Node.js Microservices for High Traffic</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="group block" href="#">
+                                    <span class="block text-xs text-slate-500 mb-1">March 08, 2024</span>
+                                    <span
+                                        class="text-primary hover:underline font-medium text-sm line-clamp-2 leading-snug">The
+                                        Future of Jetpack Compose in 2024</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="group block" href="#">
+                                    <span class="block text-xs text-slate-500 mb-1">March 01, 2024</span>
+                                    <span
+                                        class="text-primary hover:underline font-medium text-sm line-clamp-2 leading-snug">Optimizing
+                                        Core Web Vitals for E-commerce</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="group block" href="#">
+                                    <span class="block text-xs text-slate-500 mb-1">Feb 24, 2024</span>
+                                    <span
+                                        class="text-primary hover:underline font-medium text-sm line-clamp-2 leading-snug">Why
+                                        Serverless is the Best Choice for Startups</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-slate-50 dark:bg-slate-900/30 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-slate-400">inventory_2</span>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Our Products</h3>
+                        </div>
+                        <div class="grid grid-cols-1 gap-3">
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-[10px]">circle</span> Apps
+                                Directory</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-[10px]">circle</span> Productivity
+                                Suite</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm flex items-center gap-2"
+                                href="#"><span class="material-symbols-outlined text-[10px]">circle</span> Fintech
+                                Solutions</a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-slate-50 dark:bg-slate-900/30 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Support &amp; Documentation
+                        </h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">Help Center</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">API Docs</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">Community Forum</a>
+                            <a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#">Status Page</a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-slate-50 dark:bg-slate-900/30 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Connect With Us</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-sm font-medium hover:bg-white dark:hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-base">mail</span> Email
+                            </a>
+                            <a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-sm font-medium hover:bg-white dark:hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-base">groups</span> LinkedIn
+                            </a>
+                            <a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-sm font-medium hover:bg-white dark:hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-base">terminal</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="py-24 bg-background-offset dark:bg-background-dark-offset border-t border-slate-100 dark:border-slate-800 mt-auto">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div
+                    class="rounded-3xl bg-white dark:bg-background-dark p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
+                    <div class="mx-auto max-w-2xl">
+                        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                            Ready to start your project?
+                        </h2>
+                        <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                            Our team of expert engineers is ready to help you bring your vision to life with
+                            Google-grade quality.
+                        </p>
+                        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                            <button
+                                class="rounded-xl bg-primary px-8 py-3 text-base font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary-dark transition-all">
+                                Get Started
+                            </button>
+                            <button
+                                class="rounded-xl border border-slate-200 px-8 py-3 text-base font-bold text-slate-900 dark:text-white dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+                                Contact Sales
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <script src="/components/header.js"></script>
+    <script src="/components/footer.js"></script>
+
+</body>
+
+</html>

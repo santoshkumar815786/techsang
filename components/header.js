@@ -36,6 +36,14 @@ class SiteHeader extends HTMLElement {
                     </nav>
                 </div>
                 <div class="hidden md:flex items-center gap-3">
+                <a
+                    href="/sitemap.html"
+                    title="Sitemap"
+                    class="p-2 text-slate-600 dark:text-gray-300 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-full transition-all"
+                    >
+                    <span class="material-symbols-outlined text-lg">account_tree</span>
+                    </a>
+
                     <button onclick="location='/contact.html'"
                         class="flex items-center justify-center rounded-full h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-medium transition-colors shadow-sm active:scale-95 transform">
                         Contact Us
