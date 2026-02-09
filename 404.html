@@ -53,42 +53,9 @@
 
 <body
     class="bg-background-light dark:bg-background-dark text-text-main dark:text-white font-display antialiased flex flex-col min-h-screen transition-colors duration-200">
-    <!-- Top Navigation Bar -->
-    <header
-        class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#dadce0] dark:border-gray-800">
-        <div class="px-4 md:px-10 lg:px-40 flex items-center justify-between h-16 max-w-[1440px] mx-auto">
-            <!-- Logo Section -->
-            <div
-                class="flex items-center gap-3 text-text-main dark:text-white cursor-pointer hover:opacity-90 transition-opacity">
-                <div class="size-8 text-primary">
-                    <span class="material-symbols-outlined text-3xl">terminal</span>
-                </div>
-                <h2 class="text-xl font-bold tracking-tight">Techsang</h2>
-            </div>
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center gap-8">
-                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
-                    href="#">Home</a>
-                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
-                    href="#">Services</a>
-                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
-                    href="#">Apps</a>
-                <a class="text-text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
-                    href="#">Contact</a>
-            </nav>
-            <!-- CTA Button -->
-            <div class="flex items-center gap-4">
-                <button
-                    class="hidden sm:flex items-center justify-center h-10 px-6 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-medium transition-colors shadow-sm">
-                    <span class="truncate">Contact Support</span>
-                </button>
-                <!-- Mobile Menu Icon -->
-                <button class="md:hidden text-text-main dark:text-white">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <!-- Top Navigation using component-->
+    <site-header active="apps"></site-header>
+
     <!-- Main Content: 404 Hero Section -->
     <main class="flex-grow flex items-center justify-center py-10 px-4 md:px-10 lg:px-40">
         <div class="w-full max-w-[960px] mx-auto">
@@ -144,9 +111,9 @@
                         </p>
                         <div
                             class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm text-primary dark:text-blue-400 font-medium">
-                            <a class="hover:underline" href="#">Android Development</a>
-                            <a class="hover:underline" href="#">Web Solutions</a>
-                            <a class="hover:underline" href="#">Backend API</a>
+                            <a class="hover:underline" href="/apps.html">Our Apps</a>
+                            <a class="hover:underline" href="/services.html">Our Services</a>
+                            <a class="hover:underline" href="#">Blogs</a>
                         </div>
                     </div>
                 </div>
@@ -154,46 +121,10 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-white dark:bg-background-dark border-t border-[#dadce0] dark:border-gray-800">
-        <div class="px-4 md:px-10 lg:px-40 py-12 max-w-[1440px] mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <!-- Links -->
-                <div class="flex gap-8 text-sm text-text-secondary dark:text-gray-400">
-                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
-                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
-                </div>
-                <!-- Copyright -->
-                <div class="text-center md:text-right">
-                    <p class="text-sm text-text-secondary dark:text-gray-500">
-                        © 2024 Techsang. All rights reserved.
-                    </p>
-                </div>
-                <!-- Social Icons -->
-                <div class="flex items-center gap-4">
-                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
-                        href="#">
-                        <!-- Twitter/X (Material Symbol substitute) -->
-                        <span class="material-symbols-outlined text-[20px]">alternate_email</span>
-                    </a>
-                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
-                        href="#">
-                        <!-- LinkedIn (Material Symbol substitute: business_center or generic link) -->
-                        <span class="material-symbols-outlined text-[20px]">business_center</span>
-                    </a>
-                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
-                        href="#">
-                        <!-- GitHub (Material Symbol substitute: code) -->
-                        <span class="material-symbols-outlined text-[20px]">code</span>
-                    </a>
-                    <a class="size-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-text-secondary dark:text-gray-400 hover:bg-primary/10 hover:text-primary dark:hover:text-primary transition-colors"
-                        href="#">
-                        <!-- Instagram (Material Symbol substitute: photo_camera) -->
-                        <span class="material-symbols-outlined text-[20px]">photo_camera</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <site-footer></site-footer>
+
+    <script src="/components/header.js"></script>
+    <script src="/components/footer.js"></script>
 </body>
 
 </html>
