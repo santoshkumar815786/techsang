@@ -44,7 +44,7 @@ class SiteFooter extends HTMLElement {
 
                             <!-- Facebook -->
                             <a class="text-slate-400 hover:text-primary dark:hover:text-gray-300 transition-colors"
-                            href="https://www.facebook.com/YOUR_FACEBOOK_PROFILE"
+                            href="https://www.facebook.com/profile.php?id=61586108687477"
                             target="_blank">
                                 <span class="sr-only">Facebook</span>
                                 <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
@@ -79,29 +79,29 @@ class SiteFooter extends HTMLElement {
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
                                 href="/apps.html">All Apps</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="/app-details.html?appId=sateek-toolkit">Sateek Toolkit</a></li>
+                                href="/apps/bachat-box–digital-money-box-and-expense-tracker.html">Bachat Box</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="/app-details.html?appId=bachatbox">Bachat Box</a></li>
+                                href="/apps/sateek-toolkit.html">Sateek Toolkit</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-slate-900 dark:text-gray-100 mb-4">Services</h4>
                     <ul class="flex flex-col gap-3">
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="#">Web Development</a></li>
+                                href="/services.html">Web Development</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="#">Mobile Apps</a></li>
+                                href="/services.html">Mobile Apps</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="#">Backend Systems</a></li>
+                                href="/services.html">Backend Systems</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-slate-900 dark:text-gray-100 mb-4">Company</h4>
                     <ul class="flex flex-col gap-3">
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="#">About Us</a></li>
+                                href="/contact.html">About Us</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="#">Contact</a></li>
+                                href="/contact.html">Contact</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
                                 href="/privacy-policy.html">Privacy Policy</a></li>
                     </ul>
@@ -111,7 +111,7 @@ class SiteFooter extends HTMLElement {
                 class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col items-center gap-4 text-center">
                 
                 <p class="text-slate-500 dark:text-gray-500">
-                    © 2024 Techsang. All rights reserved.
+                    © 2026 Techsang. All rights reserved.
                 </p>
 
                 <!-- Optional links (will still be centered) -->
