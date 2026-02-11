@@ -49,11 +49,11 @@
             "name": "Bachat Box – Digital Money Box & Expense Tracker",
             "tagline": "💰 Bachat Box – Savings Goals App & Smart Expense Tracker. One Box a Day. Goals Guaranteed. Bachat Box is a simple and powerful personal finance app designed to help you build better money habits. Track expenses, plan budgets, and achieve your savings goals with clarity, consistency, and confidence.",
             "icon": {
-                "url": "https://play-lh.googleusercontent.com/mLPXAZFO3ETfRmk414fSYH1wsyx3kGrQHnfrh2npMVs98y9F_G4btWQ0CLp2fYkHJ-oRzoumTx8Yl1TAkQ56Lg=w480-h960-rw",
+                "url": "../apps/bachat-box/images/icon/bachat-box–digital-money-box-and-expense-tracker.webp",
                 "type": "material",
                 "value": "handyman"
             },
-            "bannerUrl": "/apps/bachat-box/images/banner/bachatbox-playstore-isting-feature-banner.webp",
+            "bannerUrl": "/apps/bachat-box/images/banner/bachat-box-playstore-listing-feature-banner.webp",
             "rating": 4.5,
             "reviews": "10",
             "downloads": "100+",
