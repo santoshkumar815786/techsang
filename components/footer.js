@@ -7,7 +7,7 @@ class SiteFooter extends HTMLElement {
                 <div class="col-span-2 lg:col-span-2">
                     <div class="flex items-center gap-2 mb-4">
                      <img
-                            src="/src/images/techsang-mobile-app-development.webp"
+                            src="/src/assets/images/techsang-mobile-app-development.webp"
                             alt="Techsang app development company building Android apps, websites, and scalable backend systems"
                             class="w-8 h-8 text-primary text-3xl group-hover:scale-105 transition-transform"
                         />
