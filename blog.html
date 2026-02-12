@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog - Techsang</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Theme Configuration Imports -->
+    <script src="/src/assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/src/assets/css/global.css" />
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden antialiased selection:bg-primary/30">
+    <!-- Navigation -->
+    <!-- Top Navigation using component-->
+    <site-header active="blog"></site-header>
+    <!-- Main Content -->
+    <main class="flex flex-col">
+        <section
+            class="relative px-4 py-16 sm:px-6 lg:px-8 lg:py-24 bg-background-light dark:bg-background-dark overflow-hidden">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none opacity-40 dark:opacity-20">
+                <div class="absolute top-0 left-10 w-72 h-72 bg-primary/10 rounded-full blur-[100px]"></div>
+                <div class="absolute bottom-0 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"></div>
+            </div>
+            <div class="relative z-10 mx-auto max-w-7xl text-center">
+                <div
+                    class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 mb-6">
+                    Insights &amp; Updates
+                </div>
+                <h1 class="text-4xl font-black tracking-tight text-slate-900 dark:text-white sm:text-6xl">
+                    Techsang <span class="text-primary">Blog</span>
+                </h1>
+                <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+                    Deep dives into Android development, web trends, and backend logic from the engineers building the
+                    next generation of digital products.
+                </p>
+            </div>
+        </section>
+        <section class="pb-24 bg-background-light dark:bg-background-dark">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <!--
+                <div
+                    class="mb-12 flex flex-wrap items-center justify-between gap-6 border-b border-slate-100 dark:border-slate-800 pb-8">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="rounded-full bg-primary px-6 py-2 text-sm font-semibold text-white">All
+                            Posts</button>
+                        <button
+                            class="rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-6 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors">Bachat
+                            Box</button>
+                        <button
+                            class="rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-6 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors">Sateek
+                            Toolkit</button> 
+                        <button
+                            class="rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-6 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors">App
+                            Development</button>
+                        <button
+                            class="rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-6 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors">Web
+                            Trends</button>
+                        <button
+                            class="rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-6 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors">Backend
+                            Logic</button>
+                        <button
+                            class="rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 px-6 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors">UI/UX
+                            Design</button>
+                    </div>
+                    <div class="relative w-full sm:w-64">
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+                        <input
+                            class="w-full rounded-xl border-slate-200 bg-slate-50 pl-10 text-sm focus:border-primary focus:ring-primary dark:border-slate-800 dark:bg-slate-900 dark:text-white"
+                            placeholder="Search articles..." type="text" />
+                    </div>
+                </div>
+                -->
+                <div class="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                    <article
+                        class="group flex flex-col items-start justify-between bg-white dark:bg-transparent rounded-2xl overflow-hidden">
+                        <div class="relative w-full aspect-[16/9] overflow-hidden rounded-2xl mb-5">
+                            <img alt="Android development concept"
+                                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe4lgqskYCgCfkgJxkaEOOEP5Q63SCvxMi7B2nFO-GzaW1cdast_CloXP0fN2z5UyOF00pcaxVBr8ddhYEY6F-FLTtAAUgZEciPzjjQ6JX3AqcSNXYPLyMdJMx3b3mdvNibj3pRSqtesT2QKkwCqN7n_2ylWnTvkKc06B6IZ59jzHDT-UMp9KO36NzkqDHjlFiATfn-BMyH6adfh2CuzWI4o1qwKVd3KIAC212fRAr10jN5zHQTe3EZEFWWjuk03R3UER-rIywILlW" />
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="rounded-full bg-white/90 dark:bg-background-dark/90 px-3 py-1 text-xs font-bold text-primary backdrop-blur-sm">Bachat
+                                    Box</span>
+                            </div>
+                        </div>
+                        <div class="max-w-xl">
+                            <div class="mt-2 flex items-center gap-x-4 text-xs text-slate-500">
+                                <time datetime="2026-01-26">Jan 26, 2026</time>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">schedule</span> 7 min read</span>
+                            </div>
+                            <div class="group relative">
+                                <h3
+                                    class="mt-3 text-xl  line-clamp-2 font-bold leading-tight text-slate-900 group-hover:text-primary dark:text-white transition-colors">
+                                    <a href="/blog/apps/bachat-box/why-you-cant-save-money-expense-tracker-guide.html">
+                                        Why You Are Not Able to Save Money (And How to Fix It with Bachat Box)
+                                    </a>
+                                </h3>
+                                <p class="mt-3 line-clamp-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
+                                    Saving money is not about earning lakhs per month. It’s about managing what you
+                                    already earn.
+                                </p>
+                            </div>
+                            <div class="mt-6">
+                                <a class="inline-flex items-center text-sm font-bold text-primary hover:gap-2 transition-all"
+                                    href="/blog/apps/bachat-box/why-you-cant-save-money-expense-tracker-guide.html">
+                                    Read More <span
+                                        class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article
+                        class="group flex flex-col items-start justify-between bg-white dark:bg-transparent rounded-2xl overflow-hidden">
+                        <div class="relative w-full aspect-[16/9] overflow-hidden rounded-2xl mb-5">
+                            <img alt="Bachat Box development concept"
+                                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe4lgqskYCgCfkgJxkaEOOEP5Q63SCvxMi7B2nFO-GzaW1cdast_CloXP0fN2z5UyOF00pcaxVBr8ddhYEY6F-FLTtAAUgZEciPzjjQ6JX3AqcSNXYPLyMdJMx3b3mdvNibj3pRSqtesT2QKkwCqN7n_2ylWnTvkKc06B6IZ59jzHDT-UMp9KO36NzkqDHjlFiATfn-BMyH6adfh2CuzWI4o1qwKVd3KIAC212fRAr10jN5zHQTe3EZEFWWjuk03R3UER-rIywILlW" />
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="rounded-full bg-white/90 dark:bg-background-dark/90 px-3 py-1 text-xs font-bold text-primary backdrop-blur-sm">Bachat
+                                    Box</span>
+                            </div>
+                        </div>
+                        <div class="max-w-xl">
+                            <div class="mt-2 flex items-center gap-x-4 text-xs text-slate-500">
+                                <time datetime="2026-02-01">Feb 01, 2026</time>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">schedule</span> 7 min read</span>
+                            </div>
+                            <div class="group relative">
+                                <h3
+                                    class="mt-3 text-xl line-clamp-2 font-bold leading-tight text-slate-900 group-hover:text-primary dark:text-white transition-colors">
+                                    <a
+                                        href="/blog/apps/bachat-box/one-box-a-day-diwali-savings-digital-money-box-story.html">
+                                        One Box a Day. How Priya Saved for Diwali with Bachat Box
+                                    </a>
+                                </h3>
+                                <p class="mt-3 line-clamp-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
+                                    Bachat Box works like a modern digital piggy bank. Instead of trying to save a huge
+                                    amount at once,
+                                    the app automatically creates a box for each day.
+                                </p>
+                            </div>
+                            <div class="mt-6">
+                                <a class="inline-flex items-center text-sm font-bold text-primary hover:gap-2 transition-all"
+                                    href="/blog/apps/bachat-box/one-box-a-day-diwali-savings-digital-money-box-story.html">
+                                    Read More <span
+                                        class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="mt-20 flex items-center justify-center gap-2">
+                    <button
+                        class="flex size-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button
+                        class="flex size-10 items-center justify-center rounded-lg bg-primary text-sm font-bold text-white">1</button>
+                    <!-- <button
+                        class="flex size-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">2</button>
+                    <button
+                        class="flex size-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">3</button>
+                    <span class="px-2 text-slate-400">...</span> -->
+                    <button
+                        class="flex size-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!--
+            <section
+                class="py-24 bg-background-offset dark:bg-background-dark-offset border-t border-slate-100 dark:border-slate-800">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="rounded-3xl bg-white dark:bg-background-dark p-8 sm:p-16 border border-slate-200 dark:border-slate-800 shadow-sm text-center">
+                        <div class="mx-auto max-w-2xl">
+                            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                                Stay updated with Techsang
+                            </h2>
+                            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                                Get the latest tech insights and engineering best practices delivered straight to your
+                                inbox. No spam, only high-quality content.
+                            </p>
+                            <form class="mt-10 flex flex-col gap-x-4 gap-y-4 sm:flex-row max-w-md mx-auto">
+                                <input
+                                    class="min-w-0 flex-auto rounded-xl border-slate-200 bg-slate-50 px-4 py-3 text-base focus:border-primary focus:ring-primary dark:border-slate-800 dark:bg-slate-900"
+                                    placeholder="Enter your email" required="" type="email" />
+                                <button
+                                    class="flex-none rounded-xl bg-primary px-8 py-3 text-base font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary-dark transition-all"
+                                    type="submit">
+                                    Subscribe
+                                </button>
+                            </form>
+                            <p class="mt-4 text-xs text-slate-500">
+                                We care about your data in our <a class="underline hover:text-primary" href="#">privacy
+                                    policy</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        -->
+        <section class="py-24 bg-background-light dark:bg-background-dark">
+            <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+                <div class="text-center space-y-8">
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                        Have a project in mind?
+                    </h2>
+                    <p class="mx-auto max-w-xl text-lg text-slate-600 dark:text-slate-400">
+                        Let's collaborate to build something amazing. From idea to launch, we are your technology
+                        partners.
+                    </p>
+                    <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                        <button onclick="location.href='/contact.html'"
+                            class="inline-flex h-14 w-full sm:w-auto items-center justify-center rounded-xl bg-primary px-8 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark hover:-translate-y-1">
+                            Discuss Your Project
+                        </button>
+                        <button onclick="location.href='/apps.html'"
+                            class="inline-flex h-14 w-full sm:w-auto items-center justify-center rounded-xl border border-slate-200 bg-white px-8 text-base font-bold text-slate-900 transition-all hover:bg-slate-50 dark:bg-transparent dark:border-slate-700 dark:text-white dark:hover:bg-slate-800">
+                            View Our Portfolio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <script src="/components/header.js"></script>
+    <script src="/components/footer.js"></script>
+
+</body>
+
+</html>

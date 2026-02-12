@@ -33,6 +33,8 @@ class SiteHeader extends HTMLElement {
                         -->
                        <a class="px-5 py-2 text-sm font-medium ${activeMenu === "contact_us" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
                             href="/contact.html">Contact us</a>
+                       <a class="px-5 py-2 text-sm font-medium ${activeMenu === "blog" ? "text-primary bg-blue-50 dark:bg-blue-900/20" : "text-slate-600 dark:text-gray-300"} rounded-full transition-all"
+                            href="/blog.html">Blog</a>
                     </nav>
                 </div>
                 <div class="hidden md:flex items-center gap-3">
