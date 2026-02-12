@@ -79,7 +79,7 @@ class SiteFooter extends HTMLElement {
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
                                 href="/apps.html">All Apps</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
-                                href="/apps/bachat-box–digital-money-box-and-expense-tracker.html">Bachat Box</a></li>
+                                href="/apps/bachat-box.html">Bachat Box</a></li>
                         <li><a class="text-slate-600 dark:text-gray-400 hover:text-primary transition-colors"
                                 href="/apps/sateek-toolkit.html">Sateek Toolkit</a></li>
                     </ul>
