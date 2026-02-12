@@ -111,7 +111,7 @@ class SiteFooter extends HTMLElement {
                 class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col items-center gap-4 text-center">
                 
                 <p class="text-slate-500 dark:text-gray-500">
-                    © 2026 Techsang. All rights reserved.
+                    © 2025 Techsang. All rights reserved. - Crafted with ❤️ in India						
                 </p>
 
                 <!-- Optional links (will still be centered) -->
