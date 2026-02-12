@@ -19,78 +19,9 @@
         rel="stylesheet" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Theme Config -->
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#4343f4",
-                        "primary-dark": "#3232b7",
-                        "background-light": "#ffffff",
-                        "background-offset": "#f5f5f8",
-                        "background-dark": "#101022",
-                        "background-dark-offset": "#1a1a2e",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "body": ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1rem",
-                        "full": "9999px"
-                    },
-                    boxShadow: {
-                        'soft': '0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15)',
-                        'card': '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)',
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* Custom styling for about section */
-        #about-paragraphs h3 {
-            color: #1f2937;
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .dark #about-paragraphs h3 {
-            color: #ffffff;
-        }
-
-        #about-paragraphs p {
-            margin-bottom: 1rem;
-            line-height: 1.75;
-        }
-
-        #about-paragraphs ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin-top: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        #about-paragraphs li {
-            margin-bottom: 0.5rem;
-            line-height: 1.625;
-        }
-
-        #about-paragraphs h3:first-child {
-            margin-top: 0;
-        }
-    </style>
+    <!-- Custom Theme Configuration Imports -->
+    <script src="/src/assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/src/assets/css/global.css" />
 </head>
 
 <body

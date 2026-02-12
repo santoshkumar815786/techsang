@@ -21,35 +21,9 @@
         rel="stylesheet" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Tailwind Config -->
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#4343f4",
-                        "primary-dark": "#3232b7",
-                        "background-light": "#ffffff",
-                        "background-offset": "#f5f5f8",
-                        "background-dark": "#101022",
-                        "background-dark-offset": "#1a1a2e",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "body": ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
+    <!-- Custom Theme Configuration Imports -->
+    <script src="/src/assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/src/assets/css/global.css" />
 </head>
 
 <body
