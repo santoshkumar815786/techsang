@@ -168,6 +168,79 @@
 
                 <div id="app-container" class="flex overflow-x-auto pb-8 -mx-4 px-4 snap-x gap-6 scrollbar-hide"
                     style="scrollbar-width: none; -ms-overflow-style: none;">
+                    <!-- Bachat Box -->
+                    <div class="snap-start shrink-0 w-[280px] group cursor-pointer"
+                        onclick="window.open('/apps/bachat-box.html')">
+                        <div
+                            class="bg-background-light dark:bg-[#1a222e] rounded-xl p-4 hover:bg-gray-50 dark:hover:bg-[#202938] transition-colors border border-transparent hover:border-[#dadce0] dark:hover:border-gray-700 relative">
+                            <div class="w-full aspect-video rounded-lg mb-4 shadow-sm overflow-hidden">
+                                <img src="/apps/bachat-box/images/banner/bachat-box-playstore-listing-feature-banner.webp"
+                                    alt="Bachat Box daily savings and expense tracker app feature banner"
+                                    class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-14 h-14 rounded-lg ${theme.bg} flex items-center justify-center shrink-0">
+                                    <img id="app-icon"
+                                        src="/apps/bachat-box/images/icon/bachat-box–digital-money-box-and-expense-tracker.webp"
+                                        alt="App Icon" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="flex flex-col flex-1 min-w-0">
+                                    <h3 class="text-base font-semibold text-text-main dark:text-white truncate">
+                                        Bachat Box – Digital Money Box & Expense Tracker
+                                    </h3>
+                                    <p class="text-xs text-text-sub dark:text-gray-400 truncate">
+                                        Tools • 4.5★
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="https://play.google.com/store/apps/details?id=com.techsang.bachatbox"
+                                target="_blank"
+                                class="absolute bottom-4 right-4 p-2 text-primary hover:bg-blue-50 dark:hover:bg-blue-900/30 rounded-full transition-all"
+                                onclick="event.stopPropagation();">
+                                <span class="material-symbols-outlined text-2xl">download_for_offline</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sateek Toolkit -->
+                    <div class="snap-start shrink-0 w-[280px] group cursor-pointer"
+                        onclick="window.open('/apps/sateek-toolkit.html')">
+                        <div
+                            class="bg-background-light dark:bg-[#1a222e] rounded-xl p-4 hover:bg-gray-50 dark:hover:bg-[#202938] transition-colors border border-transparent hover:border-[#dadce0] dark:hover:border-gray-700 relative">
+                            <div class="w-full aspect-video rounded-lg mb-4 shadow-sm overflow-hidden">
+                                <img src="/apps/sateek-toolkit/images/banner/sateek-toolkit-all-in-one-utility-app-feature-banner.webp"
+                                    alt="Bachat Box daily savings and expense tracker app feature banner"
+                                    class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-14 h-14 rounded-lg ${theme.bg} flex items-center justify-center shrink-0">
+                                    <img id="app-icon"
+                                        src="/apps/sateek-toolkit/images/icon/sateek-toolkit-all-in-one-utility-app-icon.webp"
+                                        alt="App Icon" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="flex flex-col flex-1 min-w-0">
+                                    <h3 class="text-base font-semibold text-text-main dark:text-white truncate">
+                                        Sateek Toolkit – Calculator, QR & Utility Tools
+                                    </h3>
+                                    <p class="text-xs text-text-sub dark:text-gray-400 truncate">
+                                        Tools • 4.5★
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="https://play.google.com/store/apps/details?id=com.techsang.sateek_calculator"
+                                target="_blank"
+                                class="absolute bottom-4 right-4 p-2 text-primary hover:bg-blue-50 dark:hover:bg-blue-900/30 rounded-full transition-all"
+                                onclick="event.stopPropagation();">
+                                <span class="material-symbols-outlined text-2xl">download_for_offline</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -246,84 +319,6 @@
 
     <script src="/components/header.js"></script>
     <script src="/components/footer.js"></script>
-    <script>
-        async function loadApps() {
-            const container = document.getElementById('app-container');
-
-            // Define color themes to rotate through for icons
-            const themes = [{
-                    bg: 'bg-blue-100 dark:bg-blue-900',
-                    text: 'text-primary'
-                },
-                {
-                    bg: 'bg-green-100 dark:bg-green-900',
-                    text: 'text-[#34a853]'
-                },
-                {
-                    bg: 'bg-red-100 dark:bg-red-900',
-                    text: 'text-[#ea4335]'
-                },
-                {
-                    bg: 'bg-yellow-100 dark:bg-yellow-900',
-                    text: 'text-[#fbbc04]'
-                }
-            ];
-
-            try {
-                const response = await fetch('/data/apps.json');
-                if (!response.ok) throw new Error('Failed to fetch app data');
-
-                const data = await response.json();
-                const apps = data.apps;
-
-                // Map through apps and generate HTML
-                container.innerHTML = apps.map((app, index) => {
-                    const theme = themes[index % themes.length];
-
-                    // Note: We use the first screenshot for the card preview
-                    return `
-                    <div class="snap-start shrink-0 w-[280px] group cursor-pointer" onclick="window.open('${app.route}')">
-                        <div class="bg-background-light dark:bg-[#1a222e] rounded-xl p-4 hover:bg-gray-50 dark:hover:bg-[#202938] transition-colors border border-transparent hover:border-[#dadce0] dark:hover:border-gray-700 relative">
-                            <div class="w-full aspect-video rounded-lg mb-4 bg-cover bg-center shadow-sm"
-                                style="background-image: url('${app.bannerUrl}');"
-                                aria-label="${app.name} preview">
-                            </div>
-                            
-                            <div class="flex gap-4">
-                                <div class="w-14 h-14 rounded-lg ${theme.bg} flex items-center justify-center shrink-0">
-                                    <img id="app-icon" src="${app.icon.url}" alt="App Icon" class="w-full h-full object-cover">
-                                </div>
-                                
-                                <div class="flex flex-col flex-1 min-w-0">
-                                    <h3 class="text-base font-semibold text-text-main dark:text-white truncate">
-                                        ${app.name}
-                                    </h3>
-                                    <p class="text-xs text-text-sub dark:text-gray-400 truncate">
-                                        Tools • ${app.rating}★
-                                    </p>
-                                </div>
-                            </div>
-
-                            <a href="${app.playStoreUrl}" 
-                            target="_blank" 
-                            class="absolute bottom-4 right-4 p-2 text-primary hover:bg-blue-50 dark:hover:bg-blue-900/30 rounded-full transition-all"
-                            onclick="event.stopPropagation();">
-                                <span class="material-symbols-outlined text-2xl">download_for_offline</span>
-                            </a>
-                        </div>
-                    </div>
-                `;
-                }).join('');
-
-            } catch (error) {
-                console.error('Error loading apps:', error);
-                container.innerHTML = `<p class="text-red-500 px-4">Unable to load apps at this time.</p>`;
-            }
-        }
-
-        // Execute when DOM is ready
-        document.addEventListener('DOMContentLoaded', loadApps);
-    </script>
 </body>
 
 </html>
