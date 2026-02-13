@@ -1,0 +1,15 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls",
+            "delegate_permission/common.get_login_creds"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.techsang.bachatbox",
+            "sha256_cert_fingerprints": [
+                "95:A3:24:8D:6C:70:D9:AB:54:EA:65:FC:03:3B:10:45:D0:41:38:73:9C:F5:7E:6B:5F:99:69:17:7C:8A:38:BF"
+            ]
+        }
+    }
+]
