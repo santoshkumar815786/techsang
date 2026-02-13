@@ -6,19 +6,6 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Bachat Box – Digital Money Box & Expense Tracker</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Tailwind CSS -->
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom Theme Configuration Imports -->
     <script src="/src/assets/js/tailwind-config.js"></script>
@@ -66,7 +53,7 @@
                             <div
                                 class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-text-secondary dark:text-gray-400">
                                 <div class="flex items-center gap-1">
-                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span data-icon="star" data-icon-class="w-5 h-5 text-gray-600"></span>
                                     <span id="app-rating-reviews">
                                         4.5 (10 Reviews)
                                     </span>
@@ -94,12 +81,12 @@
                             <button id="install-btn"
                                 onclick="window.open('https://play.google.com/store/apps/details?id=com.techsang.bachatbox', '_blank')"
                                 class="flex items-center justify-center gap-2 bg-primary hover:bg-blue-600 text-white h-11 px-8 rounded-lg font-medium transition-all shadow-md active:scale-95 w-full sm:w-auto">
-                                <span class="material-symbols-outlined fill">install_mobile</span>
+                                <span data-icon="install_mobile" data-icon-class="w-5 h-5 text-white"></span>
                                 <span>Install on Google Play</span>
                             </button>
                             <button onclick="window.navigator.share({url: window.location.href, title: document.title})"
                                 class="flex items-center justify-center gap-2 border border-[#dadce0] dark:border-gray-700 hover:bg-background-alt dark:hover:bg-gray-800 text-primary h-11 px-6 rounded-lg font-medium transition-colors w-full sm:w-auto">
-                                <span class="material-symbols-outlined">share</span>
+                                <span data-icon="share" data-icon-class="w-5 h-5 text-gray-600"></span>
                                 <span>Share</span>
                             </button>
                         </div>
@@ -201,7 +188,7 @@
                         <div class="lg:col-span-2 space-y-6">
                             <h2 class="text-xl font-semibold text-text-main dark:text-white flex items-center gap-2">
                                 About this app
-                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                                <span data-icon="arrow_forward" data-icon-class="w-5 h-5 text-gray-600"></span>
                             </h2>
                             <div id="about-paragraphs" class="text-text-secondary dark:text-gray-300 space-y-4">
                                 <p>Bachat Box is a simple and powerful personal finance app designed to help you build
@@ -266,7 +253,8 @@
                             <div
                                 class="bg-white dark:bg-background-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm space-y-5">
                                 <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-text-secondary">update</span>
+                                    <span data-icon="update" data-icon-class="w-5 h-5 text-gray-600"></span>
+
                                     <div class="flex flex-col">
                                         <span
                                             class="text-xs font-medium text-text-secondary uppercase tracking-wide">Updated
@@ -277,7 +265,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-text-secondary">sd_storage</span>
+                                    <span data-icon="sd_storage" data-icon-class="w-5 h-5 text-gray-600"></span>
+
                                     <div class="flex flex-col">
                                         <span
                                             class="text-xs font-medium text-text-secondary uppercase tracking-wide">Download
@@ -287,7 +276,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-text-secondary">smartphone</span>
+                                    <span data-icon="smartphone" data-icon-class="w-5 h-5 text-gray-600"></span>
                                     <div class="flex flex-col">
                                         <span
                                             class="text-xs font-medium text-text-secondary uppercase tracking-wide">Version</span>
@@ -296,7 +285,7 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-text-secondary">android</span>
+                                    <span data-icon="android" data-icon-class="w-5 h-5 text-gray-600"></span>
                                     <div class="flex flex-col">
                                         <span
                                             class="text-xs font-medium text-text-secondary uppercase tracking-wide">Requires
@@ -318,13 +307,14 @@
                                         <a id="dev-email"
                                             class="flex items-center gap-2 text-sm text-primary hover:underline"
                                             href="mailto:techsang.official@gmail.com">
-                                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                                            <span data-icon="mail" data-icon-class="w-5 h-5 text-gray-600"></span>
                                             techsang.official@gmail.com
                                         </a>
                                         <a id="dev-privacy"
                                             class="flex items-center gap-2 text-sm text-primary hover:underline"
                                             href="/apps/bachat-box/privacy-policy.html">
-                                            <span class="material-symbols-outlined text-[18px]">privacy_tip</span>
+                                            <span data-icon="privacy_tip"
+                                                data-icon-class="w-5 h-5 text-gray-600"></span>
                                             Privacy Policy
                                         </a>
                                     </div>
@@ -356,7 +346,7 @@
                                 calculators to essential tools like QR/barcode generation, age calculation, and stock
                                 market utilities, everything you need is packed into one clean, easy-to-use app.</p>
                             <div class="flex items-center gap-1 mt-2">
-                                <span class="material-symbols-outlined text-xs text-text-secondary">star</span>
+                                <span data-icon="star" data-icon-class="w-5 h-5 text-gray-600"></span>
                                 <span class="text-xs text-text-secondary">4.5</span>
                             </div>
                         </div>
@@ -369,6 +359,7 @@
 
         <script src="/components/header.js"></script>
         <script src="/components/footer.js"></script>
+        <script src="../src/assets/js/custom-icons.js"></script>
     </div>
 </body>
 
