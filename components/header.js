@@ -69,7 +69,7 @@ class SiteHeader extends HTMLElement {
               <a href="/sitemap.html"
                 title="Sitemap"
                 class="p-2 text-slate-600 dark:text-gray-300 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-full transition-all">
-                <span class="material-symbols-outlined text-lg">account_tree</span>
+                  <span class="material-symbols-outlined text-lg" data-icon="account_tree" data-icon-class="w-5 h-5 text-primary"></span>
               </a>
 
               <button onclick="location='/contact.html'"

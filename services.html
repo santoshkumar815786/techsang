@@ -6,23 +6,10 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Techsang - Services</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
     <!-- Tailwind CSS -->
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/tailwind.css">
+
     <!-- Custom Theme Configuration Imports -->
-    <script src="/src/assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="/src/assets/css/global.css" />
 </head>
 
@@ -71,7 +58,8 @@
                     <div class="space-y-6 sticky top-24">
                         <div
                             class="size-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
-                            <span class="material-symbols-outlined text-3xl">android</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="android"
+                                data-icon-class="w-5 h-5 text-success"></span>
                         </div>
                         <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
                             Android App Development
@@ -80,10 +68,18 @@
                             We build high-performance native Android applications using the latest technologies. From
                             concept to Play Store launch, we ensure your app stands out.
                         </p>
-                        <div class="hidden lg:block h-64 w-full rounded-2xl bg-slate-100 dark:bg-slate-800 bg-cover bg-center"
-                            data-alt="Abstract mobile development concept with code on screen"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4ADyPAQkkjrBlsQezj959mN9EJzZH_Y9RLdXDQTT_aWs2ViQA2v81IjoEUEVpA9hnbozfPzc5l0f6sC9guSpmrgnAeOQDaMr4GZFVsxbZ9ZssoXUF4LR5ez6IBpVie6LwCB4WHBPrmDO_44CF7jUW17VYJps6JLuErLP6FTcBQXlDuFUrIAVJYnAcOt-t09gtwZmlqitQutfqZQdPw0pn8xZqSE_rxlicsSIOq-m8y0GdPPRsyifOLGNz5FT41jDn8W8uyM0I6UVP');">
+                        <div
+                            class="relative w-full aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
+                            <!-- Image -->
+                            <img src="/src/assets/images/services/techsang-android-app-development-services.webp"
+                                alt="Custom Android app development interface designed for performance and scalability"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                loading="lazy" />
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
                         </div>
+
                     </div>
                     <div class="grid gap-6 sm:grid-cols-2">
                         <!-- Card 1 -->
@@ -91,7 +87,9 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">code</span>
+                                <span class="material-symbols-outlined" data-icon="code"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
+
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Native Android (Kotlin)
                             </h3>
@@ -103,7 +101,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">design_services</span>
+                                <span class="material-symbols-outlined" data-icon="design_services"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">UI/UX Design</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">User-centric interfaces following
@@ -114,7 +113,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">lightbulb</span>
+                                <span class="material-symbols-outlined" data-icon="lightbulb"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">App Idea Validation</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Feasibility analysis, prototyping, and
@@ -125,7 +125,10 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">shop</span>
+                                <span class="material-symbols-outlined" data-icon="shop"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
+
+
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Play Store Support</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Full assistance with Google Play
@@ -136,7 +139,10 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50 sm:col-span-2">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">build_circle</span>
+                                <span class="material-symbols-outlined" data-icon="build_circle"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
+
+
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Maintenance &amp; Updates
                             </h3>
@@ -156,7 +162,9 @@
                     <div class="order-1 lg:order-2 space-y-6 sticky top-24">
                         <div
                             class="size-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                            <span class="material-symbols-outlined text-3xl">language</span>
+
+                            <span class="material-symbols-outlined text-3xl" data-icon="language"
+                                data-icon-class="w-5 h-5 text-success"></span>
                         </div>
                         <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
                             Web Development
@@ -165,10 +173,18 @@
                             Scalable, responsive, and modern web solutions for businesses of all sizes. We create
                             digital presences that convert visitors into customers.
                         </p>
-                        <div class="hidden lg:block h-64 w-full rounded-2xl bg-slate-200 dark:bg-slate-800 bg-cover bg-center"
-                            data-alt="Modern web design layout on laptop screen"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXByxpT8no6TzOB41xmMNn9KGe9TOvdPnWv-mNjZiq2OfZeXnMv3bg3TQjhE5uT1qgk-E-YEiNuDlKnOBf-Kdrv-YhRyEF0omoh2Upz_YheaPgxn24grEoW8W-h-SzSy0a5RC7idBuLpUP7qP-rktLpQuxxlhqOD0-0-Z6hiGF09K2Qom9_y1KT4bHH9AnW74fhDrjakMcCpGaatmOOovUjGJ47dLpSCPTEUljqFSY2nI-ITuY1izvoVVHntIRAhEJlQb_ZIimddv3');">
+                        <div
+                            class="relative w-full aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
+                            <!-- Image -->
+                            <img src="/src/assets/images/services/techsang-web-development-services.webp"
+                                alt="Professional web development website interface designed for business growth"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                loading="lazy" />
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
                         </div>
+
                     </div>
                     <div class="order-2 lg:order-1 grid gap-6 sm:grid-cols-2">
                         <!-- Card 1 -->
@@ -176,7 +192,8 @@
                             class="group relative rounded-2xl border border-transparent bg-white dark:bg-background-dark p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">business</span>
+                                <span class="material-symbols-outlined" data-icon="business"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Business Websites</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Professional corporate websites that
@@ -187,7 +204,8 @@
                             class="group relative rounded-2xl border border-transparent bg-white dark:bg-background-dark p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">web</span>
+                                <span class="material-symbols-outlined" data-icon="web"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Landing Pages</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">High-conversion landing pages designed
@@ -198,7 +216,8 @@
                             class="group relative rounded-2xl border border-transparent bg-white dark:bg-background-dark p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span class="material-symbols-outlined" data-icon="shopping_cart"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">E-commerce</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Full-featured online stores with
@@ -209,7 +228,8 @@
                             class="group relative rounded-2xl border border-transparent bg-white dark:bg-background-dark p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">storefront</span>
+                                <span class="material-symbols-outlined" data-icon="storefront"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Shopify Stores</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Custom Shopify theme development,
@@ -220,7 +240,8 @@
                             class="group relative rounded-2xl border border-transparent bg-white dark:bg-background-dark p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">shopping_bag</span>
+                                <span class="material-symbols-outlined" data-icon="shopping_bag"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">WooCommerce</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Powerful WordPress e-commerce
@@ -231,7 +252,9 @@
                             class="group relative rounded-2xl border border-transparent bg-white dark:bg-background-dark p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">article</span>
+                                <span class="material-symbols-outlined" data-icon="article"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
+
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">WordPress</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Custom theme and plugin development
@@ -248,7 +271,8 @@
                     <div class="space-y-6 sticky top-24">
                         <div
                             class="size-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400">
-                            <span class="material-symbols-outlined text-3xl">dns</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="dns"
+                                data-icon-class="w-5 h-5 text-success"></span>
                         </div>
                         <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
                             Backend &amp; API Services
@@ -257,9 +281,16 @@
                             The backbone of your application. We build secure, scalable server-side architecture to
                             ensure your applications run smoothly under any load.
                         </p>
-                        <div class="hidden lg:block h-64 w-full rounded-2xl bg-slate-100 dark:bg-slate-800 bg-cover bg-center"
-                            data-alt="Abstract server room data center representation"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-XUWr_Ir2DPeGw0JsIixnpg3X6IMWBo5FMxikqu3QlSaBhPzmWILTKeNcWAp5Ol4MVcKqzvMjGCYctI-UkPbMmHFX1o2-ZD8873wMJEtlhHbm6iYNsJ8LYk7DwHjfW4zF0-WEkg5wfEBJkgRBkX4fu-uY6S71OgjhfkE7yRGmqBJNi0sA1Odf1rXy-pTBUj2YFZTovourmCIhNHmtLxf2f9dDpme6E0gNNAVCV8zhzvA5Q5qi6QrgEmCO-PQ722qqDsYQCJpQD5Q5');">
+                        <div
+                            class="relative w-full aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
+                            <!-- Image -->
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-XUWr_Ir2DPeGw0JsIixnpg3X6IMWBo5FMxikqu3QlSaBhPzmWILTKeNcWAp5Ol4MVcKqzvMjGCYctI-UkPbMmHFX1o2-ZD8873wMJEtlhHbm6iYNsJ8LYk7DwHjfW4zF0-WEkg5wfEBJkgRBkX4fu-uY6S71OgjhfkE7yRGmqBJNi0sA1Odf1rXy-pTBUj2YFZTovourmCIhNHmtLxf2f9dDpme6E0gNNAVCV8zhzvA5Q5qi6QrgEmCO-PQ722qqDsYQCJpQD5Q5"
+                                alt="Modern analytics dashboard interface displayed on a laptop screen"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                loading="lazy" />
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
                         </div>
                     </div>
                     <div class="grid gap-6 sm:grid-cols-2">
@@ -268,7 +299,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">api</span>
+                                <span class="material-symbols-outlined" data-icon="api"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">REST API Development</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Custom API development for seamless
@@ -279,7 +311,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">cloud</span>
+                                <span class="material-symbols-outlined" data-icon="cloud"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Backend Architecture</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Scalable cloud infrastructure design
@@ -290,7 +323,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">database</span>
+                                <span class="material-symbols-outlined" data-icon="database"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Database Design</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Efficient schema design for SQL
@@ -301,7 +335,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">speed</span>
+                                <span class="material-symbols-outlined" data-icon="speed"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Optimization</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Performance tuning, caching
@@ -312,7 +347,8 @@
                             class="group relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark-offset p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50 sm:col-span-2">
                             <div
                                 class="mb-4 inline-flex rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span class="material-symbols-outlined">security</span>
+                                <span class="material-symbols-outlined" data-icon="security"
+                                    data-icon-class="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-white"></span>
                             </div>
                             <h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Secure Systems</h3>
                             <p class="text-sm text-slate-600 dark:text-slate-400">Implementation of security best
@@ -399,6 +435,7 @@
 
     <script src="/components/header.js"></script>
     <script src="/components/footer.js"></script>
+    <script src="./src/assets/js/custom-icons.js"></script>
 </body>
 
 </html>
