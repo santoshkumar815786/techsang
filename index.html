@@ -6,22 +6,25 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Techsang - Digital Product Development</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/dist/tailwind.css">
+
+    <!-- Custom Theme Configuration Imports -->
+    <link rel="stylesheet" href="/src/assets/css/global.css" />
+
+
+    <!-- <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" /> -->
     <!-- Tailwind CSS -->
     <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- Custom Theme Configuration Imports -->
-    <script src="/src/assets/js/tailwind-config.js"></script>
-    <link rel="stylesheet" href="/src/assets/css/global.css" />
+    <!-- <script src="/src/assets/js/tailwind-config.js"></script> -->
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased">
@@ -54,13 +57,20 @@
                             </a>
                         </div>
                     </div>
-                    <div class="relative w-full aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center group"
-                        data-alt="Abstract 3D illustration of digital interfaces and mobile app development concepts floating in space">
-                        <!-- Decorative Abstract Visual -->
-                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-90 transition-transform duration-700 group-hover:scale-105"
-                            data-alt="Modern analytics dashboard interface displayed on a laptop screen"></div>
-                        <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+                    <div
+                        class="relative w-full aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
+
+                        <!-- Image -->
+                        <img src="/src/assets/images/techsang-app-building-company.webp"
+                            alt="Modern analytics dashboard interface displayed on a laptop screen"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            loading="lazy" />
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
+
                     </div>
+
                 </div>
             </div>
         </section>
@@ -77,7 +87,8 @@
                     <div
                         class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-[#e5e7eb] dark:border-gray-800 hover:shadow-card transition-shadow duration-300 flex flex-col items-start gap-4">
                         <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl text-primary">
-                            <span class="material-symbols-outlined text-3xl">android</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="android"
+                                data-icon-class="w-6 h-6 text-primary"></span>
                         </div>
                         <h3 class="text-xl font-bold text-text-main dark:text-white">Android App Development</h3>
                         <p class="text-text-sub dark:text-gray-400 text-sm leading-relaxed">Native Android apps focused
@@ -87,7 +98,8 @@
                     <div
                         class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-[#e5e7eb] dark:border-gray-800 hover:shadow-card transition-shadow duration-300 flex flex-col items-start gap-4">
                         <div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-xl text-[#34a853]">
-                            <span class="material-symbols-outlined text-3xl">language</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="language"
+                                data-icon-class="w-6 h-6 text-success"></span>
                         </div>
                         <h3 class="text-xl font-bold text-text-main dark:text-white">Web Development</h3>
                         <p class="text-text-sub dark:text-gray-400 text-sm leading-relaxed">Responsive, modern, and
@@ -97,7 +109,8 @@
                     <div
                         class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-[#e5e7eb] dark:border-gray-800 hover:shadow-card transition-shadow duration-300 flex flex-col items-start gap-4">
                         <div class="p-3 bg-red-50 dark:bg-red-900/20 rounded-xl text-[#ea4335]">
-                            <span class="material-symbols-outlined text-3xl">dns</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="dns"
+                                data-icon-class="w-6 h-6 text-danger"></span>
                         </div>
                         <h3 class="text-xl font-bold text-text-main dark:text-white">Backend &amp; API</h3>
                         <p class="text-text-sub dark:text-gray-400 text-sm leading-relaxed">Scalable server-side logic,
@@ -107,7 +120,9 @@
                     <div
                         class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-[#e5e7eb] dark:border-gray-800 hover:shadow-card transition-shadow duration-300 flex flex-col items-start gap-4">
                         <div class="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl text-[#fbbc04]">
-                            <span class="material-symbols-outlined text-3xl">rocket_launch</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="rocket_launch"
+                                data-icon-class="w-6 h-6 text-warning"></span>
+
                         </div>
                         <h3 class="text-xl font-bold text-text-main dark:text-white">App Publishing</h3>
                         <p class="text-text-sub dark:text-gray-400 text-sm leading-relaxed">Complete guidance from
@@ -126,7 +141,8 @@
                     <h2 class="text-2xl font-bold text-text-main dark:text-white">Our Apps</h2>
                     <a class="text-primary font-medium hover:text-blue-600 text-sm flex items-center" href="/apps.html">
                         See all
-                        <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm ml-1" data-icon="arrow_forward"
+                            data-icon-class="w-5 h-5 text-primary"></span>
                     </a>
                 </div>
 
@@ -155,7 +171,7 @@
                                         Bachat Box – Digital Money Box & Expense Tracker
                                     </h3>
                                     <p class="text-xs text-text-sub dark:text-gray-400 truncate">
-                                        Tools • 4.5★
+                                        Tools • 4.5 ★
                                     </p>
                                 </div>
                             </div>
@@ -164,7 +180,8 @@
                                 target="_blank"
                                 class="absolute bottom-4 right-4 p-2 text-primary hover:bg-blue-50 dark:hover:bg-blue-900/30 rounded-full transition-all"
                                 onclick="event.stopPropagation();">
-                                <span class="material-symbols-outlined text-2xl">download_for_offline</span>
+                                <span class="material-symbols-outlined text-2xl" data-icon="download_for_offline"
+                                    data-icon-class="w-5 h-5 text-primary"></span>
                             </a>
                         </div>
                     </div>
@@ -201,7 +218,8 @@
                                 target="_blank"
                                 class="absolute bottom-4 right-4 p-2 text-primary hover:bg-blue-50 dark:hover:bg-blue-900/30 rounded-full transition-all"
                                 onclick="event.stopPropagation();">
-                                <span class="material-symbols-outlined text-2xl">download_for_offline</span>
+                                <span class="material-symbols-outlined text-2xl" data-icon="download_for_offline"
+                                    data-icon-class="w-5 h-5 text-primary"></span>
                             </a>
                         </div>
                     </div>
@@ -222,7 +240,8 @@
                     <div class="flex flex-col items-center text-center p-6">
                         <div
                             class="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-3xl">design_services</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="design_services"
+                                data-icon-class="w-6 h-6 text-primary"></span>
                         </div>
                         <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Clean UI &amp; UX</h3>
                         <p class="text-sm text-text-sub dark:text-gray-400 leading-relaxed">Interfaces designed for
@@ -232,7 +251,8 @@
                     <div class="flex flex-col items-center text-center p-6">
                         <div
                             class="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="precision_manufacturing"
+                                data-icon-class="w-6 h-6 text-primary"></span>
                         </div>
                         <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Accurate Logic</h3>
                         <p class="text-sm text-text-sub dark:text-gray-400 leading-relaxed">Robust algorithms and
@@ -242,7 +262,8 @@
                     <div class="flex flex-col items-center text-center p-6">
                         <div
                             class="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-3xl">shield_lock</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="shield_lock"
+                                data-icon-class="w-6 h-6 text-primary"></span>
                         </div>
                         <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Privacy-Focused</h3>
                         <p class="text-sm text-text-sub dark:text-gray-400 leading-relaxed">We prioritize user data
@@ -252,7 +273,8 @@
                     <div class="flex flex-col items-center text-center p-6">
                         <div
                             class="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-3xl">all_inclusive</span>
+                            <span class="material-symbols-outlined text-3xl" data-icon="all_inclusive"
+                                data-icon-class="w-6 h-6 text-primary"></span>
                         </div>
                         <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">End-to-End</h3>
                         <p class="text-sm text-text-sub dark:text-gray-400 leading-relaxed">From initial concept to
@@ -283,6 +305,7 @@
 
     <script src="/components/header.js"></script>
     <script src="/components/footer.js"></script>
+    <script src="./src/assets/js/custom-icons.js"></script>
 </body>
 
 </html>
