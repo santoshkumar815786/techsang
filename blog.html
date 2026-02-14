@@ -5,19 +5,10 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Blog - Techsang</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
     <!-- Tailwind CSS -->
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/tailwind.css">
+
     <!-- Custom Theme Configuration Imports -->
-    <script src="/src/assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="/src/assets/css/global.css" />
 </head>
 
@@ -101,8 +92,10 @@
                         <div class="max-w-xl">
                             <div class="mt-2 flex items-center gap-x-4 text-xs text-slate-500">
                                 <time datetime="2026-01-26">Jan 26, 2026</time>
-                                <span class="flex items-center gap-1"><span
-                                        class="material-symbols-outlined text-sm">schedule</span> 7 min read</span>
+                                <span class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined ml-1 text-base" data-icon="schedule"
+                                        data-icon-class="w-5 h-5 text-primary">
+                                    </span>7 min read</span>
                             </div>
                             <div class="group relative">
                                 <h3
@@ -119,8 +112,9 @@
                             <div class="mt-6">
                                 <a class="inline-flex items-center text-sm font-bold text-primary hover:gap-2 transition-all"
                                     href="/blog/apps/bachat-box/why-you-cant-save-money-expense-tracker-guide.html">
-                                    Read More <span
-                                        class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+                                    Read More
+                                    <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward"
+                                        data-icon-class="w-5 h-5 text-primary"></span>
                                 </a>
                             </div>
                         </div>
@@ -140,8 +134,10 @@
                         <div class="max-w-xl">
                             <div class="mt-2 flex items-center gap-x-4 text-xs text-slate-500">
                                 <time datetime="2026-02-01">Feb 01, 2026</time>
-                                <span class="flex items-center gap-1"><span
-                                        class="material-symbols-outlined text-sm">schedule</span> 7 min read</span>
+                                <span class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined ml-1 text-base" data-icon="schedule"
+                                        data-icon-class="w-5 h-5 text-primary">
+                                    </span>7 min read</span>
                             </div>
                             <div class="group relative">
                                 <h3
@@ -157,11 +153,12 @@
                                     the app automatically creates a box for each day.
                                 </p>
                             </div>
-                            <div class="mt-6">
+                            <div class="mt-6 ml-1">
                                 <a class="inline-flex items-center text-sm font-bold text-primary hover:gap-2 transition-all"
                                     href="/blog/apps/bachat-box/one-box-a-day-diwali-savings-digital-money-box-story.html">
-                                    Read More <span
-                                        class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+                                    Read More
+                                    <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward"
+                                        data-icon-class="w-5 h-5 text-primary"></span>
                                 </a>
                             </div>
                         </div>
@@ -170,7 +167,8 @@
                 <div class="mt-20 flex items-center justify-center gap-2">
                     <button
                         class="flex size-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
-                        <span class="material-symbols-outlined">chevron_left</span>
+                        <span class="material-symbols-outlined" data-icon="chevron_left"
+                            data-icon-class="w-5 h-5 text-primary">
                     </button>
                     <button
                         class="flex size-10 items-center justify-center rounded-lg bg-primary text-sm font-bold text-white">1</button>
@@ -181,7 +179,8 @@
                     <span class="px-2 text-slate-400">...</span> -->
                     <button
                         class="flex size-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
-                        <span class="material-symbols-outlined">chevron_right</span>
+                        <span class="material-symbols-outlined" data-icon="chevron_right"
+                            data-icon-class="w-5 h-5 text-primary">
                     </button>
                 </div>
             </div>
@@ -248,7 +247,7 @@
 
     <script src="/components/header.js"></script>
     <script src="/components/footer.js"></script>
-
+    <script src="./src/assets/js/custom-icons.js"></script>
 </body>
 
 </html>
