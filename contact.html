@@ -15,37 +15,32 @@
 <body
     class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white antialiased overflow-x-hidden">
     <div class="relative flex min-h-screen w-full flex-col group/design-root">
-        <!-- Navigation -->
-        <!-- Top Navigation using component-->
         <site-header active="contact_us"></site-header>
-        <!-- Main Content -->
         <main class="layout-container flex h-full grow flex-col">
-            <div class="flex flex-1 justify-center py-5 px-4 md:px-10 lg:px-40">
-                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-                    <!-- Hero Section -->
-                    <div class="@container mb-10">
-                        <div class="flex flex-col gap-6 py-10 @[480px]:gap-8 items-center text-center">
+            <div class="flex flex-1 justify-center py-5 px-4 md:px-10 lg:px-20 xl:px-40">
+                <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+                    <div class="@container mb-6 md:mb-10">
+                        <div class="flex flex-col gap-6 py-6 md:py-10 @[480px]:gap-8 items-center text-center">
                             <div class="flex flex-col gap-4 max-w-[700px]">
                                 <h1
-                                    class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                    class="text-[#111418] dark:text-white text-3xl sm:text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
                                     Let's Build Together
                                 </h1>
-                                <h2 class="text-[#60708a] dark:text-gray-400 text-lg font-normal leading-relaxed">
+                                <h2
+                                    class="text-[#60708a] dark:text-gray-400 text-base sm:text-lg font-normal leading-relaxed px-2">
                                     We help you build scalable Android apps, websites, and backend systems. Whether you
                                     have a clear vision or just an idea, we're here to help.
                                 </h2>
                             </div>
                         </div>
                     </div>
-                    <!-- Contact Card -->
-                    <div class="p-4 @container">
+                    <div class="p-0 sm:p-4 @container">
                         <div
-                            class="flex flex-col items-center justify-start rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.08)] bg-white dark:bg-[#1a2230] overflow-hidden border border-[#e5e7eb] dark:border-gray-800 p-8 md:p-12 transition-all hover:shadow-lg">
+                            class="flex flex-col items-center justify-start rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.08)] bg-white dark:bg-[#1a2230] overflow-hidden border border-[#e5e7eb] dark:border-gray-800 p-6 sm:p-8 md:p-12 transition-all hover:shadow-lg">
 
-                            <!-- Avatar / Illustration -->
                             <div class="mb-6 relative">
                                 <div
-                                    class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mb-4 mx-auto ring-4 ring-white dark:ring-[#1a2230] shadow-sm overflow-hidden">
+                                    class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary/10 flex items-center justify-center mb-4 mx-auto ring-4 ring-white dark:ring-[#1a2230] shadow-sm overflow-hidden">
                                     <img src="/src/assets/images/santosh-kumar-app-and-backend-developer.webp"
                                         alt="Santosh Kumar – App & Backend Developer"
                                         class="w-full h-full object-cover" />
@@ -55,63 +50,56 @@
                             <div class="flex w-full flex-col items-center justify-center gap-4 text-center">
                                 <div>
                                     <p
-                                        class="text-[#111418] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">
+                                        class="text-[#111418] dark:text-white text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em]">
                                         Santosh Kumar
                                     </p>
-                                    <p class="text-primary text-sm font-bold uppercase tracking-wider mt-1">
+                                    <p class="text-primary text-xs sm:text-sm font-bold uppercase tracking-wider mt-1">
                                         Lead Developer
                                     </p>
                                 </div>
 
                                 <p
-                                    class="text-[#60708a] dark:text-gray-300 text-base font-normal leading-relaxed max-w-[600px] my-2">
+                                    class="text-[#60708a] dark:text-gray-300 text-sm sm:text-base font-normal leading-relaxed max-w-[600px] my-2">
                                     For app development, web development, backend services, or collaborations, feel free
                                     to reach out. We are committed to delivering high-quality, modern solutions tailored
                                     to your needs.
                                 </p>
 
-                                <!-- Tech Stack Row -->
-                                <div class="flex flex-wrap items-center justify-center gap-6 mt-4">
+                                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-4">
 
-                                    <!-- Android -->
                                     <div title="Native Android Development">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
-                                            alt="Native Android Development" class="w-8 h-8" />
+                                            alt="Native Android Development" class="w-6 h-6 sm:w-8 sm:h-8" />
                                     </div>
 
-                                    <!-- Node.js -->
                                     <div title="Node.js Backend Development">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                            alt="Node.js" class="w-8 h-8" />
+                                            alt="Node.js" class="w-6 h-6 sm:w-8 sm:h-8" />
                                     </div>
 
-                                    <!-- Laravel -->
                                     <div title="Laravel Framework">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
-                                            alt="Laravel" class="w-8 h-8" />
+                                            alt="Laravel" class="w-6 h-6 sm:w-8 sm:h-8" />
                                     </div>
 
-                                    <!-- PHP -->
                                     <div title="PHP">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                            alt="PHP" class="w-8 h-8" />
+                                            alt="PHP" class="w-6 h-6 sm:w-8 sm:h-8" />
                                     </div>
 
-                                    <!-- Go -->
                                     <div title="Go (Golang)">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-                                            alt="Go Programming Language" class="w-8 h-8" />
+                                            alt="Go Programming Language" class="w-6 h-6 sm:w-8 sm:h-8" />
                                     </div>
 
-                                    <!-- MySQL -->
                                     <div title="MySQL Database">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                            alt="MySQL" class="w-8 h-8" />
+                                            alt="MySQL" class="w-6 h-6 sm:w-8 sm:h-8" />
                                     </div>
 
-                                    <!-- RDBMS -->
                                     <div title="Relational Database Systems">
-                                        <span data-icon="database" data-icon-class="w-5 h-5 text-[30px] text-slate-600 dark:text-gray-300"></span>
+                                        <span data-icon="database"
+                                            data-icon-class="w-5 h-5 text-[24px] sm:text-[30px] text-slate-600 dark:text-gray-300"></span>
                                     </div>
 
                                 </div>
@@ -119,9 +107,7 @@
 
                                 <div class="w-full h-px bg-[#f0f2f5] dark:bg-gray-700 my-4 max-w-[200px]"></div>
 
-                                <!-- ✅ Social Links (NEW) -->
                                 <div class="flex items-center justify-center gap-3">
-                                    <!-- LinkedIn -->
                                     <a href="https://linkedin.com/in/santosh-kumar815" target="_blank" rel="noopener"
                                         title="LinkedIn"
                                         class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 transition-all">
@@ -132,36 +118,34 @@
                                         </svg>
                                     </a>
 
-                                    <!-- Gmail -->
                                     <a href="mailto:santosh.official.365@gmail.com" title="Email"
                                         class="w-10 h-10 flex items-center justify-center rounded-full bg-red-50 text-red-600 hover:bg-red-100 dark:bg-red-900/20 dark:text-red-400 transition-all">
                                         <span data-icon="mail" data-icon-class="w-5 h-5 text-red"></span>
                                     </a>
                                 </div>
 
-                                <!-- Existing CTA -->
                                 <div class="flex flex-col sm:flex-row items-center gap-3 w-full justify-center mt-2">
-                                    <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-all shadow-md hover:shadow-lg w-full sm:w-auto group"
+                                    <a class="flex min-w-0 cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-4 sm:px-6 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-all shadow-md hover:shadow-lg w-full sm:w-auto group"
                                         href="mailto:santosh.official.365@gmail.com">
-                                        <span data-icon="mail" data-icon-class="w-5 h-5 text-danger"></span>
+                                        <span data-icon="mail" data-icon-class="w-5 h-5 mr-2 text-white"></span>
                                         <span class="truncate">santosh.official.365@gmail.com</span>
                                     </a>
 
                                     <button
-                                        class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 w-12 bg-[#f0f2f5] dark:bg-gray-700 text-[#111418] dark:text-white hover:bg-[#e4e6e9] dark:hover:bg-gray-600 transition-colors"
+                                        class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 w-full sm:w-12 bg-[#f0f2f5] dark:bg-gray-700 text-[#111418] dark:text-white hover:bg-[#e4e6e9] dark:hover:bg-gray-600 transition-colors"
                                         onclick="navigator.clipboard.writeText('santosh.official.365@gmail.com')"
                                         title="Copy Email">
-                                        <span data-icon="content_copy" data-icon-class="w-5 h-5 text-danger"></span>
+                                        <span data-icon="content_copy" data-icon-class="w-5 h-5"></span>
+                                        <span class="sm:hidden ml-2 font-bold">Copy Email</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Additional Context / Services Summary -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-12">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 py-8 md:py-12">
                         <div
-                            class="flex flex-col items-center text-center gap-2 p-4 rounded-lg hover:bg-white dark:hover:bg-[#1a2230] transition-colors">
+                            class="flex flex-col items-center text-center gap-2 p-6 rounded-lg bg-gray-50/50 dark:bg-transparent hover:bg-white dark:hover:bg-[#1a2230] transition-colors border border-transparent hover:border-[#e5e7eb] dark:hover:border-gray-800">
                             <div
                                 class="size-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-2">
                                 <span data-icon="android" data-icon-class="w-5 h-5 text-success"></span>
@@ -171,7 +155,7 @@
                                 with clean architecture.</p>
                         </div>
                         <div
-                            class="flex flex-col items-center text-center gap-2 p-4 rounded-lg hover:bg-white dark:hover:bg-[#1a2230] transition-colors">
+                            class="flex flex-col items-center text-center gap-2 p-6 rounded-lg bg-gray-50/50 dark:bg-transparent hover:bg-white dark:hover:bg-[#1a2230] transition-colors border border-transparent hover:border-[#e5e7eb] dark:hover:border-gray-800">
                             <div
                                 class="size-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-2">
                                 <span data-icon="language" data-icon-class="w-5 h-5 text-danger"></span>
@@ -181,7 +165,7 @@
                                 the latest technologies.</p>
                         </div>
                         <div
-                            class="flex flex-col items-center text-center gap-2 p-4 rounded-lg hover:bg-white dark:hover:bg-[#1a2230] transition-colors">
+                            class="flex flex-col items-center text-center gap-2 p-6 rounded-lg bg-gray-50/50 dark:bg-transparent hover:bg-white dark:hover:bg-[#1a2230] transition-colors border border-transparent hover:border-[#e5e7eb] dark:hover:border-gray-800 sm:col-span-2 md:col-span-1">
                             <div
                                 class="size-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-2">
                                 <span data-icon="dns" data-icon-class="w-5 h-5 text-danger"></span>
@@ -194,7 +178,6 @@
                 </div>
             </div>
         </main>
-        <!-- Footer -->
         <site-footer></site-footer>
 
         <script src="/components/header.js"></script>
