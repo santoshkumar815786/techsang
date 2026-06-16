@@ -1,6 +1,6 @@
 {
-    "latest_version_code": 9,
+    "latest_version_code": 10,
     "min_supported_version_code": 9,
-    "update_type": "force",
+    "update_type": "optional",
     "update_message": "A new version is available with performance improvements and bug fixes."
 }
